@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    #Nav {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    #Nav > .upNav {
+      width: 95%;
+      display: flex;
+      justify-content: right;
+    }
+    .upNav > div {
+      margin-left: 20px;
+    }
+    .upNav > div:nth-child(3) {
+      color: white;
+      background-color: black;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .upNav > div:nth-child(2) > select {
+      border: 0px;
+    }
+    #Nav > .bottomNav {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+    }
+    .bottomNav > div {
+      width: 150px;
+      margin-left: 10px;
+    }
+    .bottomNav > div > img {
+      width: 80%;
+    }
+    .bottomNav > div:nth-child(4) {
+      width: 100%;
+    }
+    .bottomNav > div:nth-child(4) > input {
+      width: 100%;
+      border: 1px solid black;
+      padding: 10px;
+    }
+    #Top {
+      width: 100%;
+    }
+    #Top > .poster {
+      display: flex;
+      background-color: #f1f1f0;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      margin-bottom: 100px;
+    }
+    #Top > .poster > img {
+      width: 80%;
+      margin: auto;
+    }
+    .high{
+        height: 350px;
+        display: flex;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        
+    }
+    .high::-webkit-scrollbar{
+        display: none;
+    }
+    .high>div{
+        display: flex;
+    }
+    .high>div>img{
+        width: 330px;
+        height: 350px;
+    }
+    h4{
+        display: block;
+        rotate: 270deg;
+        margin: auto;
+        margin-left:0px;
+        font-size: 30px;
+        width: 250px;
+        height: 150px;
+    }
+    .disc{
+        display: flex;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        height: 350px;
+        
+    }
+    .disc>div{
+        display: flex;
+    }
+    .disc>div>img{
+        width: 330px;
+        height: 350px;
+    }
+    .disc::-webkit-scrollbar{
+        display: none;
+    }
+
+
+    .bth{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    
+    .bth img{
+        width: 400px;
+        height: 300px;
+    }
+    .b{
+        height: 410px;
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        overflow-y: hidden;
+    }
+    .b::-webkit-scrollbar{
+        display: none;
+    }
+
+    .b>div{
+       border-top: 0.5px solid black;
+       border-right: 0.5px solid black;
+       border-left: none;
+       font-size: 25px;
+       border-bottom: 1px solid black;
+    }
+    .b>div:nth-child(1){
+        font-size: 80px;
+        background-color: rgb(235, 234, 234);
+        padding: 10px;
+        padding-right: 38px;
+        font-family: monospace;
+    }
+    .t{
+        height: 400px;
+        display: flex;
+        /* border-top: 1px solid black;
+        border-bottom: 1px solid black; */
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        overflow-y: hidden;
+    }
+    .t::-webkit-scrollbar{
+        display: none;
+    }
+    .t>div{
+       /* border-top: 0.5px solid black; */
+       border-right: 0.5px solid black;
+       border-left: none;
+       font-size: 25px;
+    }
+    .t>div:nth-child(3){
+        font-size: 80px;
+        background-color: rgb(235, 234, 234);
+        padding: 10px;
+        padding-right: 38px;
+        font-family: monospace;
+    }
+    .h{
+        height: 400px;
+        display: flex;
+        /* border-top: 1px solid black;
+        border-bottom: 1px solid black; */
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        overflow-y: hidden;
+    }
+    .h::-webkit-scrollbar{
+        display: none;
+    }
+    .h>div{
+       border-top: 0.5px solid black;
+       border-right: 0.5px solid black;
+       border-left: none;
+       font-size: 25px;
+    }
+    .h>div:nth-child(2){
+        font-size: 80px;
+        background-color: rgb(235, 234, 234);
+        width: 500px;
+        padding: 10px;
+        padding-right: 170px;
+        font-family: monospace;
+    }
+    .bth h6{
+        font-size:30px;
+        margin-top: 0px;
+
+    }
+    
+  </style>
+  <body>
+    <div id="Nav">
+      <div class="upNav">
+        <div><a href="">/IN- US$</a></div>
+        <div>
+          <select name="Help" id="help">
+            <option value="help">Help</option>
+            <option value="contact">Contact Us</option>
+            <option value="about us">About Us</option>
+            <option value="career">Careers</option>
+          </select>
+        </div>
+        <div>Sign up or log in</div>
+      </div>
+      <div class="bottomNav">
+        <div><img src="./FAV.png" alt="Logo" /></div>
+        <div><h5>Women</h5></div>
+        <div><h5>Men</h5></div>
+        <div>
+          <input
+            type="search"
+            name="searchProduct"
+            id="SearchP"
+            placeholder="Search (e.g. Valentino Dresses)"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="Top">
+      <div class="poster">
+        <img
+          src="https://cdna.lystit.com/cms/EN_Default_460f2da2ac.png"
+          alt="error"
+        />
+      </div>
+      <div class="highdisc">
+        <div class="high">
+          <div><h4>FASHION WEEK HIGHLIGHTS</h4><img src="https://cdna.lystit.com/cms/NY_2_1_1c48a8c2e8.jpg" alt="error"></div>
+          <div><h4>DISCOVER ON MONCLER.COM</h4><img src="https://cdna.lystit.com/cms/Lyst_Top_Lyst_600x600_fdf139ed79.jpg" alt="error"></div>
+          <div><h4>FASHION WEEK HIGHLIGHTS</h4><img src="https://cdna.lystit.com/cms/LDN_M_3d58cc7dad.jpg" alt="error"></div>
+          <div><h4>FASHION WEEK HIGHLIGHTS</h4><img src="https://cdna.lystit.com/cms/M2_1_0cc1f7aeb8.jpg" alt="error"></div>
+          <div><h4>FASHION WEEK HIGHLIGHTS</h4><img src="https://cdna.lystit.com/cms/P2_1_d2ab77afa6.jpg" alt="error"></div>
+        </div>
+        <div class="disc">
+          <div><h4>DISCOVER PRADA MENS</h4><img src="https://cdna.lystit.com/cms/600x600_Affiliate_Prada_Holiday_BU_1_1_e41fdd0245.jpg" alt="error"></div>
+          <div><h4>DISCOVER MIU MIU</h4><img src="https://cdna.lystit.com/cms/2022_09_06_Miu_Miu_Holiday_London_01_7116_20_KG_F15_1080x1080_copia_a19e5d5e18.jpg" alt="error"></div>
+          <div><h4>YOOXI DOUBLE STRIKE: GIFTS FOR V-DAY</h4><img src="https://cdna.lystit.com/cms/600x600_2_48655d400e.jpg" alt="error"></div>
+          <div><h4>GET TO KNOW HEY HARPER</h4><img src="https://cdna.lystit.com/cms/hh_3_12_1_4e0197f0fa.jpg" alt="error"></div>
+          <div><h4>DUNHILL: EXCLUSIVITY & CRAFTMANSHIP. BORN IN LONDON, 1983.</h4><img src="https://cdna.lystit.com/cms/DUNHILL_WINTER_MARKDOWN_2022_1x1_600x600px_4f7aecf25b.jpg" alt="error"></div>
+        </div>
+      </div>
+      <div class="bth">
+        <div class="b">
+            <div>BREAKOUT BRANDS</div>
+            <div><h6>BALENCIAGA</h6><img src="https://cdna.lystit.com/cms/balenciaga_b4eec10d67.jpg" alt=""></div>
+            <div><h6>VIVIENNE WESTWOOD</h6><img src="https://cdna.lystit.com/cms/vivienne_westwood_f7d712c58e.jpg" alt=""></div>
+            <div><h6>HOKA ONE ONE</h6><img src="https://cdna.lystit.com/cms/hoka_one_one_7c61e26c5a.jpg" alt=""></div>
+            <div><h6>BURBERRY</h6><img src="https://cdna.lystit.com/cms/burberry_6d39746bc8.jpg" alt=""></div>
+            <div><h6>FENDI</h6><img src="https://cdna.lystit.com/cms/fendi_cb9b2391df.png" alt=""></div>
+            <div><h6>ALEXANDER MCQUEEN</h6><img src="https://cdna.lystit.com/cms/alexander_mcqueen_baedc5140b.jpg" alt=""></div>
+            <div><h6>GOLDEN GOOSE</h6><img src="https://cdna.lystit.com/cms/golden_goose_59e4b8afbb.jpg" alt=""></div>
+            <div><h6>TORY BURCH</h6><img src="https://cdna.lystit.com/cms/tory_burch_c2694d7614.jpg" alt=""></div>
+            <div><h6>MARC JACOBS</h6><img src="https://cdna.lystit.com/cms/marc_jacobs_29e9988630.jpg" alt=""></div>
+            <div><h6>MONCLER</h6><img src="https://cdna.lystit.com/cms/moncler_627804ea66.jpeg" alt=""></div>
+        </div>
+        <div class="t">
+            <div><h6>FERRAGAMO BELTS</h6><img src="https://cdna.lystit.com/cms/ferragamo_belt_6f771dc38c.jpg" alt=""></div>
+            <div><h6>ALEXANDER MCQUEEN SNEAKERS</h6><img src="https://cdna.lystit.com/cms/mcqueen_sneakers_8bed6ead41.jpg" alt=""></div>
+            <div>TRENDING NOW</div>
+            <div><h6>GUCCI SCARVES AND MUFFLERS</h6><img src="https://cdna.lystit.com/cms/gucci_scarf_fe36f0efcf.jpg" alt=""></div>
+            <div><h6>CANADA GOOSE JACKETS</h6><img src="https://cdna.lystit.com/cms/canada_goose_jacket_8ef1b21a01.jpg" alt=""></div>
+            <div><h6>MOU BOOTS</h6><img src="https://cdna.lystit.com/cms/mou_boots_b752d8b2d3.jpg" alt=""></div>
+            <div><h6>COACH BOOTS</h6><img src="https://cdna.lystit.com/cms/coach_boots_501890e9f6.jpg" alt=""></div>
+            <div><h6>MONCLER JACKETS</h6><img src="https://cdna.lystit.com/cms/moncler_jacket_2d491a95dc.jpg" alt=""></div>
+            
+        </div>
+        <div class="h">
+            <div><h6>GUCCI WALLETS AND CARDHOLDERS</h6><img src="https://cdna.lystit.com/cms/gucci_wallet_efb3e00367.jpg" alt=""></div>
+            <div>HOT RIGHT NOW</div>
+            <div><h6>MACKAGE COATS</h6><img src="https://cdna.lystit.com/cms/mackage_coat_c28797a0bf.jpg" alt=""></div>
+            <div><h6>GUCCI BOOTS</h6><img src="https://cdna.lystit.com/cms/gucci_boots_b1ff8d0345.jpg" alt=""></div>
+            <div><h6>PRADA BOOTS</h6><img src="https://cdna.lystit.com/cms/prada_boots_6233e75fa8.jpg" alt=""></div>
+            <div><h6>BURBERRY SHIRTS</h6><img src="https://cdna.lystit.com/cms/burberry_shirt_bfcb721a9f.jpg" alt=""></div>
+            <div><h6>ACNE STUDIOS AND MUFFLERS</h6><img src="https://cdna.lystit.com/cms/acne_scarf_962909ccdd.jpg" alt=""></div>
+            <div><h6>MUGLER JEANS</h6><img src="https://cdna.lystit.com/cms/mugler_jeans_23663c939e.jpg" alt=""></div>
+            
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script></script>
