@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAV-Sign up</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: Lucida;
+    }
+    #Nav {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 80px;
+      position: fixed;
+      background-color: white;
+      border-bottom: 1px solid black;
+    }
+    #Nav > .upNav {
+      width: 95%;
+      display: flex;
+      justify-content: right;
+    }
+    .upNav > div {
+      margin-left: 20px;
+    }
+    .upNav > div:nth-child(3) {
+      color: white;
+      background-color: black;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .upNav > div:nth-child(2) > select {
+      border: 0px;
+    }
+    .upNav > div:nth-child(3) > a {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
+    #Nav > .bottomNav {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+    }
+    .bottomNav > div {
+      width: 150px;
+      margin-left: 10px;
+    }
+    .bottomNav > div >a> img {
+      width: 80%;
+    }
+    .bottomNav > div:nth-child(4) {
+      width: 100%;
+    }
+    .bottomNav > div:nth-child(4) > input {
+      width: 100%;
+      border: 1px solid black;
+      padding: 10px;
+    }
+    #parent {
+      display: flex;
+      height: 800px;
+      width: 80%;
+      margin: auto;
+      margin-top: 0;
+      padding-top: 70px;
+    }
+    #parent > .child {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 300px;
+    }
+
+    #parent > .child > .signup {
+      width: 300px;
+      background-color: black;
+      color: white;
+      padding: 10px;
+      justify-content: center;
+      text-align: center;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .child > input {
+      width: 100%;
+      border: 0px;
+      border-bottom: 1px solid black;
+      background-color: rgb(241, 240, 240);
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: 30px;
+      padding: 5px;
+    }
+    .slide {
+      display: flex;
+      width: 1500px;
+      flex-direction: column;
+      overflow: auto;
+      overflow-x: hidden;
+      scroll-snap-type: y mandatory;
+      scroll-behavior: auto;
+      margin: 10px;
+    }
+    .slide::-webkit-scrollbar {
+      display: none;
+    }
+    #parent > .child > h4 {
+      font-size: xx-large;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 20px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+    #foot {
+      display: flex;
+      width: 100%;
+      height: 500px;
+      margin-top: 50px;
+      background-color: rgb(243, 242, 242);
+      border-top: 1px solid black;
+      padding: 50px;
+      justify-content: space-around;
+    }
+    #foot > .rating img {
+      width: 500px;
+      margin-bottom: 10px;
+    }
+
+    .rating p {
+      margin-left: 80px;
+    }
+    #foot > .ihi {
+      display: flex;
+    }
+    .ihi {
+      display: flex;
+    }
+
+    .ihi h4 {
+      margin-bottom: 20px;
+      margin-right: 10px;
+    }
+    .ihi p {
+      margin-bottom: 8px;
+      margin-right: 10px;
+    }
+    .child > div > label {
+      color: grey;
+      font-size: small;
+    }
+    .child a {
+      text-decoration: none;
+      cursor: pointer;
+      color: black;
+      font-size: small;
+      margin-bottom: 20px;
+    }
+  </style>
+  <body>
+    <div id="Nav">
+      <div class="upNav">
+        <div><a href="">/IN- US$</a></div>
+        <div>
+          <select name="Help" id="help">
+            <option value="help">Help</option>
+            <option value="contact">Contact Us</option>
+            <option value="about us">About Us</option>
+            <option value="career">Careers</option>
+          </select>
+        </div>
+        <div><a href="signin.html">Sign up or log in</a></div>
+      </div>
+      <div class="bottomNav">
+        <div><a href="./Homepage.html"><img src="./FAV.png" alt="Logo" /></a></div>
+        <div><h5>Women</h5></div>
+        <div><h5>Men</h5></div>
+        <div>
+          <input
+            type="search"
+            name="searchProduct"
+            id="SearchP"
+            placeholder="Search (e.g. Valentino Dresses)"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="parent">
+      <div class="child">
+        <a href="./signin.html"> ⇽Back </a>
+        <h4>Create an account</h4>
+        <div id="emailid">
+          <!-- append email id here -->
+        </div>
+        <label>Create a password</label>
+        <input
+          type="password"
+          name="passsword"
+          id="password"
+          placeholder="Enter your password to create account"
+        />
+        <div>
+          <input type="checkbox" name="aggreement" id="agree" />
+          <label
+            >I would like to hear about products, services, and sales, including
+            personalized email alerts from Lyst. You can unsubscribe at any
+            time</label
+          >
+        </div>
+        <button class="signup">Sign up</button>
+      </div>
+      <div class="slide">
+        <img
+          src="https://static.lystit.com/static/n/img/sign-up/value-proposition-full.f0074b4c3a236f4af081f4cefb6475bd.png"
+          alt="error"
+        />
+      </div>
+    </div>
+    <div id="foot">
+      <div class="rating">
+        <div class="rat">
+          <img src="./Screenshot (83).png" alt="" />
+          <p>© 2023 FAV</p>
+        </div>
+      </div>
+      <div class="ihi">
+        <div>
+          <h4>INTERNATIONAL</h4>
+          <p>Fav- India</p>
+          <p>Fav- Australia</p>
+          <p>Fav- USA</p>
+          <p>Fav- France</p>
+          <p>Fav- UK</p>
+        </div>
+        <div>
+          <h4>HELP AND INFO</h4>
+          <p>Help Centre</p>
+          <p>About Us</p>
+          <p>Contact</p>
+          <p>Terms & Conditions</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
