@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAV-Sign in</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: Lucida;
+    }
+    #Nav {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 80px;
+      position: fixed;
+      background-color: white;
+      border-bottom: 1px solid black;
+    }
+    #Nav > .upNav {
+      width: 95%;
+      display: flex;
+      justify-content: right;
+    }
+    .upNav > div {
+      margin-left: 20px;
+    }
+    .upNav > div:nth-child(3) {
+      color: white;
+      background-color: black;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .upNav > div:nth-child(2) > select {
+      border: 0px;
+    }
+    .upNav > div:nth-child(3) > a {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
+    #Nav > .bottomNav {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+    }
+    .bottomNav > div {
+      width: 150px;
+      margin-left: 10px;
+    }
+    .bottomNav > div >a> img {
+      width: 80%;
+    }
+    .bottomNav > div:nth-child(4) {
+      width: 100%;
+    }
+    .bottomNav > div:nth-child(4) > input {
+      width: 100%;
+      border: 1px solid black;
+      padding: 10px;
+    }
+    #parent {
+      display: flex;
+      height: 800px;
+      width: 80%;
+      margin: auto;
+      margin-top: 0;
+      padding-top: 70px;
+    }
+    #parent > .child {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 300px;
+    }
+    .child > button {
+      width: 250px;
+      display: flex;
+      background-color: white;
+      margin: auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 5px;
+      height: 30px;
+    }
+    .child > button div {
+      margin-right: 20px;
+    }
+    .child > button img {
+      width: 20px;
+    }
+    #parent > .child > .Continue {
+      width: 300px;
+      background-color: black;
+      color: white;
+      padding: 5px;
+      justify-content: center;
+      text-align: center;
+      border-radius: 5px;
+    }
+    .child > input {
+      width: 100%;
+      border: 0px;
+      border-bottom: 1px solid black;
+      background-color: rgb(241, 240, 240);
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: 30px;
+      padding: 5px;
+    }
+    .slide {
+      display: flex;
+      width: 1500px;
+      flex-direction: column;
+      overflow: auto;
+      overflow-x: hidden;
+      scroll-snap-type: y mandatory;
+      scroll-behavior: auto;
+      margin: 10px;
+    }
+    .slide::-webkit-scrollbar {
+      display: none;
+    }
+    #parent > .child > h4 {
+      font-size: xx-large;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 20px;
+    }
+    .child > p {
+      font-size: xx-small;
+      color: rgb(120, 119, 119);
+      margin-left: 5px;
+    }
+    .child a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    button {
+      cursor: pointer;
+    }
+    #foot {
+      display: flex;
+      width: 100%;
+      height: 500px;
+      margin-top: 50px;
+      background-color: rgb(243, 242, 242);
+      border-top: 1px solid black;
+      padding: 50px;
+      justify-content: space-around;
+    }
+    #foot > .rating img {
+      width: 500px;
+      margin-bottom: 10px;
+    }
+
+    .rating p {
+      margin-left: 80px;
+    }
+    #foot > .ihi {
+      display: flex;
+    }
+    .ihi {
+      display: flex;
+    }
+
+    .ihi h4 {
+      margin-bottom: 20px;
+      margin-right: 10px;
+    }
+    .ihi p {
+      margin-bottom: 8px;
+      margin-right: 10px;
+    }
+  </style>
+  <body>
+    <div id="Nav">
+      <div class="upNav">
+        <div><a href="">/IN- US$</a></div>
+        <div>
+          <select name="Help" id="help">
+            <option value="help">Help</option>
+            <option value="contact">Contact Us</option>
+            <option value="about us">About Us</option>
+            <option value="career">Careers</option>
+          </select>
+        </div>
+        <div><a href="signin.html">Sign up or log in</a></div>
+      </div>
+      <div class="bottomNav">
+        <div> <a href="./Homepage.html"><img src="./FAV.png" alt="Logo" /></a> </div>
+        <div><h5>Women</h5></div>
+        <div><h5>Men</h5></div>
+        <div>
+          <input
+            type="search"
+            name="searchProduct"
+            id="SearchP"
+            placeholder="Search (e.g. Valentino Dresses)"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="parent">
+      <div class="child">
+        <h4>The only Fashion site you need</h4>
+        <label>Email</label>
+        <input
+          type="email"
+          name="Email"
+          id="email"
+          placeholder="Enter your Email Adress to Login or Register"
+        />
+        <button class="Continue">Continue</button>
+        <hr />
+        <button>
+          <div>
+            <img
+              src="https://tse3.mm.bing.net/th?id=OIP.Kg2FF2wpIK_HLyo8Q56ycAHaFj&pid=Api&P=0"
+              alt=""
+            />
+          </div>
+          Continue with Google
+        </button>
+        <button>
+          <div>
+            <img
+              src="https://tse3.mm.bing.net/th?id=OIP.qT5L06XoOCBIM5S9saGHtAHaHa&pid=Api&P=0"
+              alt=""
+            />
+          </div>
+          Continue with Apple
+        </button>
+        <button>
+          <div>
+            <img
+              src="https://tse1.explicit.bing.net/th?id=OIP.Ua5AXhtGRgPuisZVmetclQHaFL&pid=Api&P=0"
+              alt=""
+            />
+          </div>
+          Continue with Facebook
+        </button>
+        <p>
+          By creating an account, you consent to lyst's
+          <a>Tearms & Conditions.</a> To learn more how FAV uses and protects
+          your personal data, please read FAV's <a>Privacy Policy.</a>
+        </p>
+      </div>
+      <div class="slide">
+        <img
+          src="https://static.lystit.com/static/n/img/sign-up/value-proposition-full.f0074b4c3a236f4af081f4cefb6475bd.png"
+          alt="error"
+        />
+      </div>
+    </div>
+    <div id="foot">
+      <div class="rating">
+        <div class="rat">
+          <img src="./Screenshot (83).png" alt="" />
+          <p>© 2023 FAV</p>
+        </div>
+      </div>
+      <div class="ihi">
+        <div>
+          <h4>INTERNATIONAL</h4>
+          <p>Fav- India</p>
+          <p>Fav- Australia</p>
+          <p>Fav- USA</p>
+          <p>Fav- France</p>
+          <p>Fav- UK</p>
+        </div>
+        <div>
+          <h4>HELP AND INFO</h4>
+          <p>Help Centre</p>
+          <p>About Us</p>
+          <p>Contact</p>
+          <p>Terms & Conditions</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
