@@ -16,13 +16,13 @@ It is Fashion website that shows you a data of fashion, This websites takes help
 <br>
 <h2>Screenshots</h2>
 <h3>Home Page</h3>
-<img align="center" src="https://drive.google.com/file/d/1J7XYh86ccRqk6jFa6VumaxpUpNuORnxH/view?usp=share_link" alt="" />
-<img align="center" src="https://drive.google.com/file/d/1YyWyCf8su8f2n9kkiR72728aBKTFoMrx/view?usp=share_link" alt="" />
-<img align="center" src="https://drive.google.com/file/d/14Y1TpOPTlyLKXMsIiqPWRfJfOCDcSHpr/view?usp=share_link" alt="" />
+<img align="center" src="https://drive.google.com/file/d/1J7XYh86ccRqk6jFa6VumaxpUpNuORnxH/view?usp=share_link" alt="" >
+<img align="center" src="https://drive.google.com/file/d/1YyWyCf8su8f2n9kkiR72728aBKTFoMrx/view?usp=share_link" alt="" >
+<img align="center" src="https://drive.google.com/file/d/14Y1TpOPTlyLKXMsIiqPWRfJfOCDcSHpr/view?usp=share_link" alt="" >
 <br>
 <br>
 <h3>Women's Fashion</h3>
-<img align  = "https://drive.google.com/file/d/1sRxff-KwjARnjaQGH-1JuFw9v7qmAdgU/view?usp=share_link" alt=""/>
+<img align  = "https://drive.google.com/file/d/1sRxff-KwjARnjaQGH-1JuFw9v7qmAdgU/view?usp=share_link" alt="">
 <br>
 <br>
 <h3>Sign in & Sign up</h3>
