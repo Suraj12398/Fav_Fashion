@@ -13,6 +13,10 @@
       box-sizing: border-box;
       font-family: Lucida;
     }
+    a{
+      text-decoration: none;
+      color: black;
+    }
     #Nav {
       margin: auto;
       display: flex;
@@ -22,10 +26,7 @@
       position: fixed;
       background-color: white;
       border-bottom: 1px solid black;
-      z-index: 10;
-    }
-    .blank {
-      height: 50px;
+      z-index: 1;
     }
     #Nav > .upNav {
       width: 95%;
@@ -41,13 +42,13 @@
       padding: 5px;
       border-radius: 5px;
     }
+    .upNav > div:nth-child(2) > select {
+      border: 0px;
+    }
     .upNav > div:nth-child(3) > a {
       text-decoration: none;
       color: white;
       cursor: pointer;
-    }
-    .upNav > div:nth-child(2) > select {
-      border: 0px;
     }
     #Nav > .bottomNav {
       width: 90%;
@@ -60,7 +61,7 @@
       width: 150px;
       margin-left: 10px;
     }
-    .bottomNav > div > img {
+    .bottomNav > div >a> img {
       width: 80%;
     }
     .bottomNav > div:nth-child(4) {
@@ -400,7 +401,7 @@
       margin-bottom: 20px;
       margin-right: 10px;
     }
-    .ihi p {
+    .ihi p a {
       margin-bottom: 8px;
       margin-right: 10px;
     }
@@ -410,6 +411,9 @@
     }
     button {
       cursor: pointer;
+    }
+    .blank{
+      height: 50px;
     }
   </style>
   <body>
@@ -427,8 +431,8 @@
         <div><a href="signin.html">Sign up or log in</a></div>
       </div>
       <div class="bottomNav">
-        <div><img src="./FAV.png" alt="Logo" /></div>
-        <div><h5>Women</h5></div>
+        <div> <a href="./index.html"><img src="./FAV.png" alt="Logo" /></a> </div>
+        <div><h5><a href="./womens.html">Women</a></h5></div>
         <div><h5>Men</h5></div>
         <div>
           <input
@@ -782,10 +786,10 @@
         </div>
         <div>
           <h4>HELP AND INFO</h4>
-          <p>Help Centre</p>
-          <p>About Us</p>
-          <p>Contact</p>
-          <p>Terms & Conditions</p>
+          <p><a href="./help.html">Help Center</a></p>
+          <p><a href="./aboutUs.html">About Us</a></p>
+          <p><a href="./help.html">Contact Us</a></p>
+          <p><a href="./terms.html">Terms & Conditions</a></p>
         </div>
       </div>
     </div>

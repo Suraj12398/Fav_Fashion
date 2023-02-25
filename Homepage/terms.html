@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+
+* {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: Lucida;
+    }
+    a{
+      text-decoration: none;
+      color: black
+    }
+    #Nav {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 80px;
+      position: fixed;
+      background-color: white;
+      border-bottom: 1px solid black;
+    }
+    #Nav > .upNav {
+      width: 95%;
+      display: flex;
+      justify-content: right;
+    }
+    .upNav > div {
+      margin-left: 20px;
+    }
+    .upNav > div:nth-child(3) {
+      color: white;
+      background-color: black;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .upNav > div:nth-child(2) > select {
+      border: 0px;
+    }
+    .upNav > div:nth-child(3) > a {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
+    #Nav > .bottomNav {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+    }
+    .bottomNav > div {
+      width: 150px;
+      margin-left: 10px;
+    }
+    .bottomNav > div >a> img {
+      width: 80%;
+    }
+    .bottomNav > div:nth-child(4) {
+      width: 100%;
+    }
+    .bottomNav > div:nth-child(4) > input {
+      width: 100%;
+      border: 1px solid black;
+      padding: 10px;
+    }
+    .blank{
+        height: 80px;
+    }
+    #term{
+        width: 80%;
+        margin: auto;
+        text-align: justify;
+    }
+    hr{
+        margin-bottom: 20px;
+    }
+  </style>
+  <body>
+    <div id="Nav">
+        <div class="upNav">
+          <div><a href="">/IN- US$</a></div>
+          <div>
+            <select name="Help" id="help">
+              <option value="help">Help</option>
+              <option value="contact">Contact Us</option>
+              <option value="about us">About Us</option>
+              <option value="career">Careers</option>
+            </select>
+          </div>
+          <div><a href="signin.html">Sign up or log in</a></div>
+        </div>
+        <div class="bottomNav">
+          <div> <a href="./index.html"><img src="./FAV.png" alt="Logo" /></a> </div>
+          <div><h5><a href="./womens.html">Women</a></h5></div>
+          <div><h5>Men</h5></div>
+          <div>
+            <input
+              type="search"
+              name="searchProduct"
+              id="SearchP"
+              placeholder="Search (e.g. Valentino Dresses)"
+            />
+          </div>
+        </div>
+      </div>
+      
+    
+    
+    <div id="term">
+        <div class="blank"></div>
+        <h1>Terms & Conditions</h1>
+        <hr>
+      <p>
+        Welcome to FAV. FAV is brought to you by FAV LTD (referred to in
+        these Terms as "we", "us", "our", and "FAV"). We are a company
+        incorporated in England and Wales, with company number 07132083 and with
+        a registered office at The Minster Building 7th Floor, 21 Mincing Lane,
+        London EC3R 7AG.
+      </p>
+      <p>
+        These Terms &amp; Conditions ("Terms") together with our Privacy Policy
+        (which you can view by clicking
+       here) and Cookie Policy (which you
+        can view by clicking and
+        Copyright &amp; Trademarks Policy (which you can view by clicking
+        ) (collectively, the
+        "Terms") govern your access to and use of FAV's websites, mobile
+        applications and other platforms FAV owns or controls and makes
+        available to you (the "Services"), and any other linked pages or blogs,
+        features, content (including any information, text, graphics, photos,
+        lists of items compiled by you, comments, reviews, links, or other
+        materials uploaded, downloaded or appearing on, or linked to the
+        Services), or applications offered from time to time by FAV in
+        connection therewith (collectively referred to as "Content"). Your
+        access to and use of the Services is conditioned on your acceptance of
+        and compliance with these Terms. By accessing or using the Services you
+        agree to be bound by these Terms.
+      </p>
+      <h4>1. Basic Terms</h4>
+      <p>
+        You are solely responsible for your use of the Services, for any content
+        you post to the Services, and for any consequences thereof. The Content
+        you submit, post, or display on the Services (including product reviews,
+        the items you select as part of "Saved Items") will be able to be viewed
+        by other users of the Services and through third party services and
+        websites. You can go to your account "Settings" page to disable your
+        account, in which case no one will be able to view your Content and you
+        will be logged out. You should only provide Content that you are
+        comfortable sharing with others under these Terms.
+      </p>
+      <p>
+        You may use the Services only if you are at least 13 years of age. We do
+        not knowingly market or sell products for purchase by children. You may
+        only buy items from FAV if you are legally capable of forming a binding
+        contract with FAV (or if you are under 18 years old, but over 13 years
+        old, with the consent and involvement of a parent or guardian) and are
+        able to abide by and comply with these Terms, and are not a person
+        barred from receiving the Services under the laws of the United States,
+        United Kingdom or any other applicable jurisdiction. You may use the
+        Services only in compliance with these Terms and all applicable local,
+        state, national, and international laws, rules and regulations. If you
+        open an account on behalf of a company, organisation, or other entity,
+        then: "you" includes you and that entity; and you represent and warrant
+        that you are authorised on behalf of that entity to bind the entity to
+        these Terms; and you agree to these Terms on the entity's behalf.
+      </p>
+      <p>
+        The Services that FAV provides are always evolving and the form and
+        nature of the Services that FAV provides may change from time to time
+        without prior notice to you. In addition, FAV may stop (permanently or
+        temporarily) providing the Services (or any features within the
+        Services) to you or to users generally and may not be able to provide
+        you with prior notice. FAV retains the right to create limits on use
+        and storage at its sole discretion at any time without prior notice or
+        any liability to you.
+      </p>
+      <p>
+        The Services may include advertisements, which may be targeted to the
+        Content or information on the Services, queries made through the
+        Services, or other information. The types and extent of advertising by
+        FAV on the Services are subject to change. In consideration for FAV
+        granting you access to and use of the Services, you agree that FAV and
+        its third party providers and partners may place such advertising on the
+        Services or in connection with the display of Content or information
+        from the Services whether submitted by you or others.
+      </p>
+      <h4>2. Account Registration</h4>
+      <p>
+        In order to register, you are required to provide your username, email
+        address and password. You are also able to add a profile picture and
+        bio, and add user preferences.
+      </p>
+      <p>
+        All personal details disclosed by you on the Services will be collected
+        and processed in accordance with our
+       Privacy Policy and
+        Cookie Policy. You warrant that all
+        the information you provide to us is accurate and complete.
+      </p>
+      <p>
+        You agree to register with FAV and access and use your account solely
+        for personal use. You may not authorise others to use your account.
+      </p>
+      <p>
+        You are solely responsible for keeping your registration and other
+        personal details (including your username and password) for your account
+        confidential.
+      </p>
+      <p>
+        You shall promptly notify FAV of any actual or suspected unauthorised
+        third party access to your account. You shall co-operate with, and
+        assist, us in any action or proceedings by us to prevent or otherwise
+        deal with any unauthorised receipt, access or use of your account by any
+        third party.
+      </p>
+      <p>
+        You warrant that all registration information and personal details
+        provided to FAV is true and accurate.
+      </p>
+      <h4>3. Facebook Connect</h4>
+      <p>
+        You can also register using Facebook Connect, which allows you to
+        register with FAV via your Facebook account. If you decide to do this,
+        you give us permission to access basic information from your Facebook
+        account. This information is collected by Facebook and is provided to us
+        under the terms of Facebook’s privacy policy. We have no control over
+        individual account privacy settings on such services or policies on how
+        your personal information will be used. You and Facebook are in control
+        of these matters, not us. Before using these features, you are
+        encouraged to read all policies and information on Facebook to learn
+        more about how they handle your information. FAV is not responsible for
+        any acts or omissions by Facebook and any connected social media service
+        providers' use of features that come from Facebook's platform.
+      </p>
+      <h4>4. Finding and Buying Out of Stock Items</h4>
+      <p>
+        If an item is out of stock, you may ask us to locate the item on your
+        behalf via the form provided on the relevant product page. We will let
+        you know by email if we are able to locate the item for you. We will
+        then send you a tailored checkout page where you will be able to place
+        the order for the item(s) with the retailer, via FAV. For orders placed
+        via the tailored checkout page, the terms and conditions above relating
+        to
+        
+          >Buying on FAV via the Integrated Checkout
+        
+        will apply, as well as the relevant retailer's terms and conditions. It
+        is your responsibility to ensure that you review the relevant retailer's
+        terms and conditions before placing the order.
+      </p>
+      <h4>5. Buying Products Through FAV</h4>
+      <p>
+        FAV is an online intermediary which partners with some of the world's
+        best known brands to give you a wide array of fashion items to buy.
+      </p>
+      <p>There are two ways to buy products through FAV:</p>
+      <p><strong>a)</strong> Buying on a FAV Partner website</p>
+      <p>
+        Sometimes when you select a particular product that you wish to buy, you
+        will be taken directly to the third party FAV merchant (the "FAV
+        Partner") website and asked to provide further personal details, which
+        are likely to include your billing and delivery address, and payment
+        card details. You are being taken here because that FAV Partner is not
+        part of our Integrated Checkout service (see below for more details).
+        The personal details you enter on these FAV Partner websites will be
+        collected, stored and processed in accordance with the terms and
+        conditions and privacy policy of these websites. You must read and
+        accept the terms and conditions and privacy and cookie policies of the
+        FAV Partner website before purchasing your items from them. FAV is not
+        responsible for the terms and conditions, privacy policies of and/or
+        practices on other sites. The FAV Partners are solely responsible for
+        any and all issues related to products and services offered on their
+        websites, including but not limited to issues arising from the
+        processing of your transactions on the FAV Partner websites. We are
+        only responsible for personal information collected on the Services.
+        Please see ourPrivacy Policy and
+       Cookie Policy for further
+        information.
+      </p>
+
+      <p><strong>b)</strong> Buying on FAV via the Integrated Checkout</p>
+      <p>
+        We operate an Integrated Checkout service, allowing you to add multiple
+        items from various FAV Partners to your shopping basket and checkout
+        all these items on FAV and through the Services. It is a neat and
+        efficient way of buying all your fashion items in one go. In order to
+        process these payments we will need to share your personal data,
+        shipping details and, in some cases, payment details that are related to
+        such transactions with each of the FAV Partners from whom you are
+        purchasing the products, but only using our secure systems. The personal
+        data, shipping details and payment details you provide to us will be
+        collected, stored and processed in accordance with our
+      Privacy Policy and
+      Cookie Policy and in accordance with
+        the privacy and cookies policies of the FAV Partners from whom you have
+        purchased the products. These FAV Partners are solely responsible for
+        their use of your personal data, shipping details and payment details
+        once we share the data with them, and you should carefully review their
+        privacy policies before completing a transaction on our Integrated
+        Checkout service.
+      </p>
+      <p>
+        Payments made on FAV via our Integrated Checkout service will be
+        processed either by:
+      </p>
+      <p>
+        i. the FAV Partner directly using the details provided to them by FAV,
+        or
+      </p>
+      <p>ii. by Klarna, a third party payment process provider.</p>
+      <p>
+        When using Klarna checkout on our Integrated Checkout service, you will
+        need to provide your payment information and billing details to Klarna
+        and Klarna will process payment. Your credit card details will not be
+        passed on to the FAV Partners from whom you are purchasing the products
+        but your billing information will be shared so that the transaction can
+        be completed. In order to place an order on via our Integrated Checkout
+        using Klarna Checkout you will need to accept Klarna’s terms and
+        conditions. Please make sure that you carefully review Klarna’s full
+        terms and conditions before completing a transaction on the Klarna
+        Checkout. More information about Klarna can be viewed below in the
+        Payments section and Klarna's full terms and conditions are available
+
+      </p>
+      <p>
+        Please note that FAV has no responsibility for the fulfilment of your
+        order, regardless of how you purchase your items through FAV. You
+        should contact the FAV Partner from whom you have bought the item
+        directly in respect of any queries you have on the delivery, refund,
+        exchange or return of the items you purchase.
+      </p>
+      <h4>6. Payments</h4>
+      <h5>FAV Partner Websites</h5>
+      <p>
+        If you are making a payment on one of our FAV Partner websites, payment
+        can be made by any card accepted by the FAV Partner that delivers the
+        product. You will be asked to enter your shipping details, billing
+        details and payment details in order to purchase the product from the
+        FAV Partner.
+      </p>
+      <h5>Payments on FAV via our Integrated Checkout service</h5>
+      <p>a) Payments processed by FAV Partners</p>
+      <p>
+        If you are making a payment on FAV via our Integrated Checkout service,
+        then FAV accepts a variety of payment options, including credit and
+        debit cards. When you make your first payment through the Integrated
+        Checkout service, you will be asked to enter your shipping address and
+        billing/payment details in order to purchase the item. If you are a FAV
+        member, your shipping and billing details will be stored in accordance
+        with our Cookie Policy and the
+        Services will remember your shipping and billing details the next time
+        you go to purchase an item via our Integrated Checkout service. If you
+        are not a FAV member, you will be required to enter your shipping and
+        billing details each time you purchase an item.
+      </p>
+      <p>b) Payments processed by Klarna</p>
+      <p>
+        For payments made on FAV via Klarna checkout on our Integrated Checkout
+        service, Klarna accepts a variety of payment options, a full list of
+        which can be viewed in their terms and conditions
+       
+      </p>
+      <p>
+        When you pay for products via Klarna checkout on our Integrated Checkout
+        service, you will in fact, be purchasing a purchasing service (similar
+        to a “token”) for the contents of your basket from Klarna. Klarna will
+        carry out a variety of fraud and credit checks before taking a pre
+        authorisation on your card. Klarna will then issue pre-paid virtual
+        credit card(s) for the amount of the transaction (one virtual credit
+        card per FAV Partner) and FAV will pass the details of the virtual
+        credit card(s) plus all relevant customer personal information (to
+        include billing and shipping information but not your payment details),
+        to the relevant FAV Partner(s) (for details of how this information is
+        kept secure, please see the
+        Payment Security section of our
+        site). Each FAV Partner will process the payment using Klarna’s virtual
+        credit card and will be responsible for fulfilling the order and
+        shipping it to you. At this stage, you will be entering into a contract
+        for the supply of products with the FAV Partner. Your card will be
+        charged only once the FAV Partner has confirmed your order. If for any
+        reason your order cannot be fulfilled, the pre authorisation on your
+        card will be released and no funds will be taken.
+      </p>
+      <p>
+        Your credit/debit card receipt will show the name “Klarna/FAV” as you
+        will be buying a purchasing service from Klarna. If you buy from several
+        FAV Partners in one transaction, your card statement will show separate
+        entries for each FAV Partner involved in the transaction (each entry on
+        your statement will show the names Klarna and FAV). For the avoidance
+        of doubt, you will be directly contracting with the FAV Partner for the
+        sale and supply of goods.
+      </p>
+      <p>
+        When placing an order on FAV via our Klarna Checkout you will need to
+        accept Klarna’s terms and conditions. Please make sure that you
+        carefully review Klarna’s full terms and conditions before completing a
+        transaction on our Integrated Checkout service. Klarna’s full terms and
+        conditions are available
+       
+      </p>
+      <p>c) Storage of your information</p>
+      <p>
+        If you are a FAV member, your shipping and billing details will be
+        stored in accordance with our Cookie Policy and the Services will
+        remember your shipping and billing details the next time you go to
+        purchase an item via our Integrated Checkout service. If you are not a
+        FAV member, you may be required to enter your shipping and billing
+        details each time you purchase an item.
+      </p>
+      <p>
+        If the first time you use our Integrated Checkout service is via Klarna
+        checkout, FAV will not collect or store your payment card details.
+        Payment card information will be provided directly to Klarna at checkout
+        and will be subject to
+      
+      </p>
+      <p>
+        FAV members may be offered the option for FAV to store their payment
+        card details. You may change or delete any existing payment card details
+        attached to your account by going to the "Purchase Settings" section of
+        your account "Settings".
+      </p>
+      <p>
+        Klarna may require you, or give you the option, to store your billing
+        and payment information at the checkout stage. Any storage of payment
+        details by Klarna will be governed by Klarna’s terms and conditions
+        which can be viewed
+    
+      </p>
+      <p>d) Stripe payment processing</p>
+      <p>
+        For certain transactions made via our Integrated Checkout, we also use a
+        third party payment process provider called Stripe. When you place an
+        order via our Integrated Checkout in respect of which Stripe processes
+        payments, Stripe will use your credit card (or the Klarna virtual credit
+        card) to process the transaction. For any transactions processed by
+        Stripe, we will provide Stripe with the details of your card (or the
+        Klarna virtual credit card) as well as your billing information. All
+        billing and customer information transmitted by FAV will be fully
+        encrypted and only used to process card transactions which you have
+        initiated. For further details of how your information is kept secure,
+        please see the
+       Payment Security section.
+      </p>
+      <p>e) Payment methods</p>
+      <p>
+        There are certain payment methods that you cannot use on the Services.
+        FAV Partners/Klarna may not accept:
+      </p>
+      <ul>
+        <li>Cheques or postal orders</li>
+        <li>Cash in any currency</li>
+        <li>Purchase orders</li>
+        <li>International wire transfers</li>
+        <li>Direct debits or standing orders</li>
+        <li>PayPal</li>
+        <li>Bank transfers</li>
+      </ul>
+      <p>
+        If you are paying for items on our Integrated Checkout using Klarna
+        checkout, Klarna accepts a variety of payment methods, a full list of
+        which can be viewed in their terms and conditions
+    
+      </p>
+      <p>f) General information about online payments</p>
+      <p>
+        However you pay for an item, you will need to follow instructions on the
+        relevant checkout page. All credit/debit card holders are subject to
+        validation checks and authorisation by the card issuer. If the issuer of
+        your payment card refuses to authorise payment, we will not be liable
+        for any delay or non-delivery.
+      </p>
+      <p>
+        We take reasonable care to make our site secure. All billing and
+        customer information transmitted by FAV will be fully encrypted and
+        only used to process card transactions which you have initiated. Please
+        note, however, that we are not responsible, and have no liability, for
+        transactions which are made on Klarna checkout or on our FAV Partner
+        websites.
+      </p>
+      <p>
+        Furthermore, we take reasonable care, in so far as it is in our power to
+        do so, to keep the details of your order and payment secure, but in the
+        absence of negligence on our part we are not liable for any loss you may
+        suffer if a third party procures unauthorised access to any data you
+        provide when accessing or ordering through the Services.
+      </p>
+      <h4>7. Taxes And Duties</h4>
+      <p>
+        Orders may be subject to additional taxes, duties and charges. Please be
+        aware that the price of a Product may change at checkout if it is
+        subject to any taxes, duties, fees, levies or delivery charges applied
+        in the country you have selected for the delivery of your order. Where
+        possible, FAV will calculate these charges on your behalf and add them
+        to the total cost of your order.
+      </p>
+      <p>
+        Where it is not possible for FAV to calculate and charge additional
+        taxes, duties and charges at checkout, including customs charges, you
+        may be responsible for the payment of these charges when you receive
+        your order.
+      </p>
+      <h4>8. Currency Conversion</h4>
+      <p>
+        You may place an order on FAV Integrated Checkout from a retailer whose
+        original prices are in a different currency from that applicable to your
+        location. Where this is the case, FAV will show you the prices in the
+        currency applicable to your location. When calculating the final order
+        price, we add a small percentage (between 1% and 3%) to the total price
+        to account for any currency fluctuations. This is to prevent the order
+        from failing because of real time currency fluctuations. If, when the
+        retailer processes the order, there has been an overpayment, the
+        retailer will refund any such overpayment back to your original payment
+        method via the payment process provider.
+      </p>
+      <h4>9. Accessing The Services</h4>
+      <p>
+        Access to the Services is permitted on a temporary basis, and we reserve
+        the right to withdraw or amend the Services without notice. We will not
+        be liable if for any reason the Services are unavailable at any time or
+        for any period. We reserve the right to modify, restrict access or
+        terminate access to the Services at any time.
+      </p>
+      <p>
+        From time to time, we may restrict access to some or all parts of our
+        Services.
+      </p>
+      <p>
+        You are responsible for making all arrangements necessary for you to
+        have access to Services. You are also responsible for ensuring that all
+        persons who access Services through your internet connection are aware
+        of these Terms, and that they comply with them.
+      </p>
+      <h4>10. Content On The Services</h4>
+      <p>
+        All Content you post on the Services (such as product reviews) is the
+        sole responsibility of the person who originated such Content.
+      </p>
+      <p>
+        Although FAV does not routinely screen or monitor content posted by
+        users of the Services, FAV reserves the right to do so and to remove
+        content which violates these Terms (or applicable law) of which FAV
+        becomes aware, but FAV is under no obligation to do so. Any use or
+        reliance on any Content or materials posted via the Services or obtained
+        by you through the Services is at your own risk. If we are notified by a
+        third party that the Content you submit or post is in violation of these
+        Terms or any applicable law, either in letter or in spirit of these
+        Terms, we reserve the right to remove such Content from the Services
+        without notice to you.
+      </p>
+      <p>
+        FAV does not endorse, support, represent or guarantee the completeness,
+        truthfulness, accuracy, or reliability of any Content or communications
+        posted via the Services or endorse any opinions expressed by users of
+        the Services. You understand that by using the Services, you may be
+        exposed to Content that might be offensive, harmful, inaccurate or
+        otherwise inappropriate, or in some cases, postings that have been
+        mislabeled or are otherwise deceptive. Under no circumstances will FAV
+        be liable in any way for any Content, including, but not limited to, any
+        errors or omissions in any Content, or any loss or damage of any kind
+        incurred as a result of the use of any Content posted, emailed,
+        transmitted or otherwise made available via the Services or broadcast
+        elsewhere.
+      </p>
+      <p>
+        Following termination or deactivation of your account, or if you remove
+        any Content from the Services, we may retain your Content for a
+        commercially reasonable period of time for backup, archival, or audit
+        purposes. Furthermore, we and other users of the Services may retain and
+        continue to use, store, display, reproduce, modify, create derivative
+        works, perform, and distribute any of your Content that other users have
+        stored or shared through the Services.
+      </p>
+      <p>
+        We allow you to follow other FAV users and items they have compiled on
+        the Services. By using the Services, you agree to allow other users of
+        the Services to follow you.
+      </p>
+      <h4>11. Your Rights</h4>
+      <p>
+        You retain your rights, including copyright and other intellectual
+        property rights, to any Content you submit, post or display on or
+        through the Services. By submitting, posting or displaying Content on or
+        through the Services from time to time, you grant FAV a worldwide,
+        non-exclusive, perpetual, irrevocable, royalty-free license (with the
+        right to sublicense) to use, copy, reproduce, process, adapt, modify,
+        publish, transmit, display, create derivative works from, and distribute
+        such Content in any and all media or distribution methods (whether now
+        known or later developed).
+      </p>
+      <p>
+        You agree that this licence includes the right for FAV to make such
+        Content available to other companies, organisations or individuals who
+        partner with FAV for the syndication, broadcast, distribution or
+        publication of such Content on other media and services.
+      </p>
+      <p>
+        You agree that no compensation will be payable to you in respect of any
+        of the foregoing uses by FAV, or other companies, organisations or
+        individuals who partner with FAV with respect to the Content that you
+        submit, post, transmit or otherwise make available through the Services.
+        You waive all moral rights (or similar or equivalent rights in other
+        jurisdictions) you have in such Content to the fullest extent permitted
+        by law.
+      </p>
+      <p>
+        FAV may modify or adapt your Content in order to transmit, display or
+        distribute it over computer networks and in various media and/or make
+        changes to your Content as are necessary to conform and adapt that
+        Content to any requirements or limitations of any networks, devices,
+        services or media.
+      </p>
+      <p>
+        You are responsible for your use of the Services, for any Content you
+        provide, and for any consequences thereof, including the use of your
+        Content by other users and FAV's third party partners. You understand
+        that your Content may be used, reproduced or displayed by FAV's
+        Partners and if you do not have the right to submit Content for such
+        use, it may subject you to liability. FAV will not be responsible or
+        liable for any use of your Content by FAV in accordance with these
+        Terms. You represent and warrant that you have all the rights, power and
+        authority necessary to grant the rights granted herein to any Content
+        that you submit.
+      </p>
+      <p>
+        FAV gives you a personal, worldwide, royalty-free, revocable,
+        non-sub-licensable, non-assignable and non-exclusive licence to use the
+        Services (which will include future updates made available to you from
+        time to time provided that you understand that such updates may be
+        subject to additional terms notified to you at the time that such update
+        is made available), subject to these Terms. This licence is for the sole
+        purpose of enabling you to use and enjoy the benefit of the Services as
+        provided by FAV, in the manner permitted by these Terms.
+      </p>
+      <p>
+        The rights in the Service are licensed, not sold to you. Except to the
+        extent permitted by applicable law, you may not copy, reproduce,
+        republish, disassemble, decompile, reverse engineer, adapt, alter, edit,
+        re-position, rebrand, change, distribute, lend, hire, sub-license, rent,
+        make a derivative work from the software in the Services.
+      </p>
+      <h4>12. FAV Rights</h4>
+      <p>
+        All right (including copyright, trademarks and other intellectual
+        property rights), title, and interest in and to the Services and the
+        Content (excluding Content provided by users of the Services) including
+        but not limited to all information, data, text, maps, graphics, the
+        "look and feel", logos, icons, trade marks, images, video clips, sound
+        clips, editorial content, notices, data compilations, page layout,
+        selection or arrangement of the contents of the Services, and the
+        underlying code and software in the Services are and will remain the
+        exclusive property of FAV and its licensors. The Services are protected
+        by copyright, trade mark, and other laws and treaties around the world.
+        All such rights in the Services, Content (excluding Content provided by
+        users of the Services) and related material are reserved.
+      </p>
+      <p>
+        FAV is a registered trade mark of FAV LTD. Both the trade mark and the
+        FAV logo are owned by us and cannot be used without our prior written
+        consent. Nothing in the Terms gives you a right to use the FAV name or
+        any of the FAV trade marks, logos, domain names, and other distinctive
+        brand features. Any feedback, comments, or suggestions you may provide
+        regarding FAV, or the Services is entirely voluntary and FAV will be
+        free to use such feedback, comments or suggestions as it sees fit and
+        without any obligation to you.
+      </p>
+      <p>
+        You may print off one copy, and may download extracts, of any page(s)
+        from our Services for your personal reference and you may draw the
+        attention of others within your organisation to material posted on our
+        Services. You must not modify the paper or digital copies of any
+        materials you have printed off or downloaded in any way, and you must
+        not use any illustrations, photographs, video or audio sequences or any
+        graphics separately from any accompanying text.
+      </p>
+      <p>
+        You must not copy any part of the Content, with a view to creating or
+        compiling any form of collection, compilation, directory or database
+        unless we provide you with our prior express written consent to do so.
+      </p>
+      <p>
+        If you copy or download any part of the Services or Content in breach of
+        these Terms, your right to use the Services will cease immediately and
+        you must, at our option, return or destroy any copies of the materials
+        you have made.
+      </p>
+      <h4>13. Restrictions On Content And Use Of The Services</h4>
+      <p>You shall not use the Services:</p>
+      <ul>
+        <li>
+          a) in any way that violates any local, national or other laws or
+          regulations or any order of a court in any relevant jurisdiction;
+        </li>
+        <li>b) for any purpose that is not permitted by these Terms;</li>
+        <li>
+          c) in any way that infringes the rights of any person or entity,
+          including their copyright, trade mark or other intellectual property
+          rights, or other privacy or contractual rights;
+        </li>
+        <li>
+          d) to distribute advertisements of any kind or post or otherwise
+          communicate any false or misleading material or message of any kind;
+        </li>
+        <li>
+          e) in any way that intentionally or unintentionally harasses, annoys,
+          threatens or intimidates any other user;
+        </li>
+        <li>
+          f) in any way that promotes or incites, whether intentionally or
+          unintentionally, racism, bigotry, hatred or physical harm of any kind;
+        </li>
+        <li>
+          g) in any way that is abusive, defamatory, inaccurate, obscene,
+          offensive, objectionable or sexually explicit;
+        </li>
+        <li>
+          h) to post photographs or images of another person without his/her
+          permission (and if a minor, the permission of the minor's legal
+          guardian);
+        </li>
+        <li>
+          i) to promote illegal or unlawful activities or in any way which may
+          lead to the encouragement, procurement or carrying out of any unlawful
+          or criminal activity or which may cause any harm, distress or
+          inconvenience to any person;
+        </li>
+        <li>
+          j) to access, tamper with, cause damage to, or use non-public areas of
+          the Services, FAV's computer systems, servers or equipment or the
+          technical delivery systems of FAV's providers;
+        </li>
+        <li>
+          k) to access or attempt to access any data of other users of the
+          Services or to penetrate any of the security measures relating to the
+          Services, or to probe, scan, or test the vulnerability of any system
+          or network or breach or circumvent any security or authentication
+          measures;
+        </li>
+        <li>
+          l) in any way that intentionally or unintentionally deceives, defrauds
+          or swindles any other user;
+        </li>
+        <li>
+          m) to introduce any malware, virus or other harmful software program
+          that intentionally or unintentionally damages or interferes with the
+          operation of the Services, including but not limited to cancelbots,
+          denial of service attacks, time-bombs, worms, Trojan horses, viruses
+          or any other maleficent software or hardware;
+        </li>
+        <li>
+          n) interfere with, or disrupt, (or attempt to do so), the access of
+          any user, host or network including, without limitation, sending a
+          virus, overloading, flooding, spamming, mail-bombing the Services, or
+          by scripting the creation of Content in such a manner as to interfere
+          with or create an undue burden on the Services;
+        </li>
+        <li>
+          o) to copy, modify, or distribute any other users' Content without
+          their consent;
+        </li>
+        <li>
+          p) for commercial purposes other than as expressly permitted in these
+          Terms;
+        </li>
+        <li>
+          q) to bypass measures used to prevent or restrict access to the
+          Services;
+        </li>
+        <li>r) to solicit or provide unlawful services;</li>
+        <li>
+          s) to harvest or otherwise collect information about others without
+          their consent;
+        </li>
+        <li>
+          t) to gain unauthorised access to the Services, the server on which
+          the Services is stored or any server, computer or database connected
+          to the Services;
+        </li>
+        <li>
+          u) to forge any TCP/IP packet header or any part of the header
+          information in any email or posting, or in any way use the Services to
+          send altered, deceptive or false source-identifying information;
+        </li>
+        <li>
+          v) to scrape, crawl or spider or otherwise use the Services or any
+          Content for phishing, spamming, trolling or any unauthorised
+          (commercial) purpose; or
+        </li>
+        <li>
+          w) to promote or support or solicit involvement in any political
+          platform or cause, religion (recognised as organised or unorganised),
+          cult or sect of any kind; or
+        </li>
+        <li>
+          x) in any way which would violate applicable UK, US or international
+          trade sanctions law.
+        </li>
+      </ul>
+      <p>
+        FAV reserves the right at all times (but will not have an obligation)
+        to remove or refuse to distribute any Content on the Services and to
+        terminate users or reclaim usernames. FAV also reserves the right to
+        access, read, preserve, or disclose any information as it reasonably
+        believes is necessary to: (i) satisfy any applicable law, regulation,
+        legal process or governmental request; (ii) enforce the Terms, including
+        investigation of potential violations hereof; (iii) detect, prevent, or
+        otherwise address fraud, security or technical issues, (iv) respond to
+        user support requests, or; (v) protect the rights, property or safety of
+        FAV, its users and the public.
+      </p>
+      <p>
+        Except as permitted through the Services (or these Terms), you have to
+        use the FAV API if you want to reproduce, modify, create derivative
+        works, distribute, sell, transfer, publicly display, publicly perform,
+        transmit, or otherwise use the Content or Services.
+      </p>
+      <p>
+        While we will do what we can to protect the security of your Content and
+        account, we cannot guarantee that unauthorised third parties will not be
+        able to defeat our security measures. Please notify us immediately of
+        any compromise or unauthorized use of your account.
+      </p>
+      <h4>14. Promotions</h4>
+      <h4>a) FAV Promotions terms and conditions (“FAV Promotion Terms”)</h4>
+      <p>
+        From time to time, FAV may run promotions, including promotional
+        discount codes, which apply to orders made on the Integrated Checkout on
+        our site. These FAV Promotion Terms apply to all FAV promotions. Each
+        FAV promotion will also have specific terms and conditions. The
+        specific terms and conditions for current FAV promotions will be
+        displayed in this section and/or in any communication you may receive
+        informing you of the promotion (usually email). If there is a conflict
+        between these FAV Promotion Terms and the specific promotion terms, the
+        specific promotion terms will prevail.
+      </p>
+      <p>
+        By using a promotional code and/or taking part in a FAV promotion you
+        will be deemed to have read and understood the applicable terms and
+        agreed to be bound by them. The Terms displayed on the FAV sites shall
+        apply to all FAV promotions.
+      </p>
+      <p>
+        FAV promotions only apply to purchases made on FAV’s Integrated
+        Checkout on our site and are not valid on the websites of any of our
+        Retailer Partners. FAV promotions are an arrangement between you and
+        FAV, and not between you and the Retailer Partner. As such, any
+        discount will not be reflected in communications you may receive from
+        the Retailer Partner regarding the order. FAV promotional codes have no
+        cash value, cannot be transferred, forwarded or reassigned and cannot be
+        redeemed for cash. FAV promotional codes cannot be used in conjunction
+        with any other offer.
+      </p>
+      <p>
+        FAV promotions are not valid for purchases made from Macy's or
+        Bloomingdale's.
+      </p>
+      <p>
+        For promotional codes, you will need to enter the promotional code in
+        the “FAV Promo Code” box on the cart page and click “apply” to obtain
+        the discount.
+      </p>
+      <p>
+        FAV reserves the right to suspend, change or cancel any promotion, at
+        any time, at our discretion. FAV may update these FAV Promotion Terms
+        from time to time and reserves the right to add to them as and where
+        necessary. You should review these FAV Promotion Terms periodically for
+        changes.
+      </p>
+      <p>
+        If you return items bought using a promotional offer, any refund you may
+        be entitled to receive will not include the redemption value of that
+        promotional offer. You will receive no more than the amount you paid
+        towards the final basket price.
+      </p>
+      <h4>
+        b) Retailer Partner Promotions terms and conditions (“Retailer Partner
+        Promotion Terms”)
+      </h4>
+      <p>
+        From time to time, FAV may permit customers using the FAV sites to
+        take part in competitions and promotions offered by our retailer
+        partners (“Retailer Promotions”). Retailer Promotions will be subject to
+        any specific terms and conditions set by the Retailer Partner and
+        usually available on the Retailer Partner’s website. You should ensure
+        that you read the specific promotion terms and conditions on the
+        Retailer Partner’s website. From time to time, FAV may identify that a
+        Retailer Promotion is ‘ending soon’ or is a 'limited time offer'. This
+        means that the end date for the applicable Retailer Promotion falls
+        within the next six days. FAV receives such end date information from
+        our Retailer Partners and takes reasonable steps to ensure that this
+        information is accurate and up to date. Notwithstanding the foregoing,
+        you should ensure that you read the applicable Retailer Promotion terms
+        and conditions on the relevant Retailer Partner’s website for full
+        details and to confirm the end date. By using a promotional code and/or
+        taking part in a Retailer Partner’s promotion on the FAV sites you will
+        be deemed to have read and understood the terms relating to the Retailer
+        Promotions and agree to be bound by them.
+      </p>
+      <p>
+        For orders placed via a Retailer Partner’s website, we will provide a
+        promotional code to be entered at the Retailer Partner’s checkout. You
+        must ensure that the promotional code is correctly inputted at checkout
+        to apply any discount to your order. For orders placed on the Integrated
+        Checkout on our site, where a promotion is indicated, FAV will
+        automatically apply the discount at checkout.
+      </p>
+      <h4>15. Sanctions</h4>
+      <p>
+        FAV complies with all applicable UK and US sanctions law in accordance
+        with FAV’s sanctions policy.
+      </p>
+      <h4>16. The Services Are Available "as-is"</h4>
+      <p>
+        Your access to and use of the Services or any Content is at your own
+        risk. You understand and agree that the Services is provided to you on
+        an "AS IS" and "AS AVAILABLE" basis.
+      </p>
+      <p>
+        Without limiting the foregoing, FAV AND ITS PARTNERS DISCLAIM TO THE
+        MAXIMUM EXTENT PERMITTED BY LAW ANY WARRANTIES, REPRESENTATIONS (OTHER
+        THAN FRAUDULENT MISREPRESENTATION), GUARANTEES OR CONDITIONS, WHETHER
+        EXPRESS OR IMPLIED.
+      </p>
+      <p>
+        FAV makes no warranty and disclaims all responsibility and liability
+        for the completeness, accuracy, availability, functionality,
+        compatibility, freedom from defects, timeliness, security, performance,
+        availability, or reliability of the Services or any content thereon.
+        FAV will not be responsible or liable for any harm to your computer
+        system, loss of data, or other harm that results from your access to or
+        use of the Services, or any Content. You also agree that FAV has no
+        responsibility or liability for the deletion of, or the failure to store
+        or to transmit, any Content and other communications maintained by the
+        Services. FAV makes no warranty that the Services will meet your
+        requirements or be available on an uninterrupted, secure, or error-free
+        basis. No advice or information, whether oral or written, obtained from
+        FAV or through the Services, will create any warranty not expressly
+        made herein.
+      </p>
+      <p>
+        We do not provide any warranty or representation that the Services are
+        free from infection by viruses or anything else that has contaminating
+        or destructive properties. You use the Services at your own discretion
+        and risk and you will be solely responsible for any damage to your
+        computer, mobile device or network that results from your use of the
+        Services. We will not be liable to you for any loss or damage caused by
+        a distributed denial-of-service attack, viruses or other technologically
+        harmful material that may infect your computer equipment, computer
+        programs, data or other proprietary material due to your use of the
+        Services or to your downloading of any Content posted on it, or on any
+        website or application linked to it.
+      </p>
+      <p>
+        We are not liable to you for any inability to access the Services at any
+        time, for any reason (including but not limited to any planned or
+        unplanned downtime, or any outages on networks (including mobile
+        networks) or when you are not in an area supported by mobile coverage).
+      </p>
+      <h4>17. Limitation Of Liability</h4>
+      <p>
+        THIS SECTION OF THE TERMS IS IMPORTANT AND YOU SHOULD READ IT CAREFULLY.
+      </p>
+      <p>
+        TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, FAV AND ITS
+        SUBSIDIARIES, AFFILIATES, OFFICERS, EMPLOYEES, AGENTS, PARTNERS AND
+        LICENSORS WILL NOT BE LIABLE FOR ANY:
+      </p>
+      <ul>
+        <li>(i) LOSS OF PROFITS, SALES OR CONTRACTS;</li>
+        <li>(ii) LOSS OF INCOME OR REVENUE;</li>
+        <li>(iii) LOSS OF BUSINESS OPPORTUNITY OR GOODWILL OR REPUTATION;</li>
+        <li>(iv) LOSS OR CORRUPTION OF DATA OR INFORMATION;</li>
+        <li>(v) LOSS OF ANTICIPATED SAVINGS;</li>
+        <li>(vi) WASTED MANAGEMENT OR OFFICE TIME; OR</li>
+        <li>
+          (vii) ANY INDIRECT, INCIDENTIAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE
+          DAMAGES,
+        </li>
+      </ul>
+      <p>ARISING FROM OR IN ANY WAY CONNECTED TO:</p>
+      <ul>
+        <li>(i) YOUR ACCESS TO OR USE OF THE SERVICES;</li>
+        <li>
+          (ii) YOUR DELAY IN USING, OR INABILITY TO ACCESS OR USE THE SERVICES;
+        </li>
+        <li>
+          (iii) THE FULFILMENT OF YOUR ORDERS FROM OUR FAV PARTNERS ONCE YOU
+          HAVE PLACED AN ORDER THROUGH FAV, INCLUDING BUT NOT LIMITED TO THE
+          DELIVERY, EXCHANGE, RETURN OR REFUND OF ITEMS YOU HAVE PURCHASED FROM
+          FAV PARTNERS;
+        </li>
+        <li>
+          (iv) ANY CONDUCT OR CONTENT OF ANY THIRD PARTY ON THE SERVICES,
+          INCLUDING WITHOUT LIMITATION, ANY DEFAMATORY, OFFENSIVE OR ILLEGAL
+          CONDUCT OF OTHER USERS OR THIRD PARTIES;
+        </li>
+        <li>
+          (v) USE OF ANY CONTENT, INFORMATION, PRODUCTS OR SERVICES OBTAINED
+          THROUGH THE SERVICES; OR
+        </li>
+        <li>
+          (vi) UNAUTHORISED ACCESS, USE OR ALTERATION OF YOUR TRANSMISSIONS OR
+          CONTENT,
+        </li>
+      </ul>
+      <p>
+        WHETHER BASED ON WARRANTY, CONTRACT OR TORT (INCLUDING NEGLIGENCE) OR
+        OTHERWISE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF LOSS OR
+        DAMAGES.
+      </p>
+      <p>
+        NOTWITHSTANDING THE EXCLUSIONS SET OUT IN THESE TERMS, IF WE ARE FOUND
+        TO BE LIABLE TO YOU, OUR TOTAL AGGREGATE LIABILITY TO YOU (WHETHER IN
+        CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY IN STATUE OR OTHERWISE) FOR
+        ALL AND ANY DAMAGES, LOSSES OR CAUSES OF ACTION ARISING, BY REASON OR IN
+        CONNECTION WITH YOUR USE OF THE SERVICES, SHALL BE LIMITED TO £100.
+      </p>
+      <p>
+        NOTHING IN THESE TERMS SHALL AFFECT YOUR STATUTORY RIGHTS AS A CONSUMER
+        OR LIMIT OR EXCLUDE OUR LIABILITY FOR PERSONAL INJURY OR DEATH CAUSED BY
+        OUR NEGLIGENCE OR FRAUDULENT MISREPRESENTATION OR ANY OTHER LIABILITY
+        WHICH CANNOT BE EXCLUDED OR LIMITED UNDER LAW.
+      </p>
+      <p>
+        The laws of some countries do not allow some or all of the limitations
+        described above. If these laws apply to you, some or all of the above
+        limitations may not apply to you and you might have additional rights.
+      </p>
+      <p>
+        We will not be held responsible for any delay or failure to comply with
+        our obligations under these conditions if the delay or failure arises
+        from any cause which is beyond our reasonable control.
+      </p>
+      <h4>18. Your Liability</h4>
+      <p>
+        THIS SECTION OF THE TERMS IS IMPORTANT AND YOU SHOULD READ IT CAREFULLY.
+      </p>
+      <p>
+        You are responsible, and assume liability, for all Content that you add,
+        or link to, the Services. You agree not to hold us responsible for
+        things other users say or do through the Services. If you have a dispute
+        with another user, you release us (and our officers, directors, agents,
+        subsidiaries, joint ventures, and employees) from any and all claims,
+        demands, and damages (actual and consequential) of every kind and
+        nature, known or unknown, arising out of or in any way connected with
+        such disputes.
+      </p>
+      <p>
+        YOU SHALL INDEMNIFY US AND KEEP US FULLY INDEMNIFIED ON DEMAND FROM AND
+        AGAINST ALL LIABILITIES, COSTS, EXPENSES, DAMAGES AND LOSSES, LEGAL
+        COSTS (CALCULATED ON A FULL INDEMNITY BASIS) AND ALL OTHER REASONABLE
+        PROFESSIONAL COSTS (INCLUDING COSTS OF DEFENSE OF CLAIMS, SUITS OR
+        PROCEEDINGS BROUGHT BY THIRD PARTIES)) AND EXPENSES SUFFERED OR INCURRED
+        BY US ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE SERVICES, THE
+        CONTENT, YOUR BREACH OF THESE TERMS AND/OR AS A RESULT OF YOUR VIOLATION
+        OF THESE TERMS AND/OR AS A RESULT OF YOUR VIOLATION OF ANY APPLICABLE
+        LAWS OR REGULATIONS.
+      </p>
+      <h4>19. Termination</h4>
+      <p>
+        We reserve the unconditional right to suspend, withdraw, terminate,
+        amend or restrict access to some parts of the Services, or to the
+        Services entirely, to you at any time immediately without notice for any
+        reason, including (without limitation) in circumstances where;
+      </p>
+      <ul>
+        <li>
+          (i) we have reasonable grounds to suspect unauthorised or fraudulent
+          use of the Services;
+        </li>
+        <li>
+          (ii) we reasonably suspect that you have not complied with these
+          Terms; or
+        </li>
+        <li>
+          (iii) we reasonably suspect a breach of confidentiality or
+          infringement of our intellectual property rights by you or a third
+          party;
+        </li>
+      </ul>
+      <p>
+        and to the maximum extent permitted by the law, we expressly exclude all
+        relevant conditions, warranties of any kind (either express or implied)
+        and other terms which might otherwise be implied by statute, common law
+        or the law of equity in relation to any liability that you may claim we
+        owe to you in respect of such suspension, withdrawal or amendment.
+      </p>
+      <p>
+        On termination of these Terms (for whatever reason) all licences and
+        rights granted to you in relation to the Services shall immediately come
+        to an end.
+      </p>
+      <h4>20. Waiver And Severability</h4>
+      <p>
+        The failure of FAV to enforce any right or provision of these Terms
+        will not be deemed a waiver of such right or provision. In the event
+        that any provision of these Terms is held to be invalid or
+        unenforceable, the remaining provisions of these Terms will remain in
+        full force and effect.
+      </p>
+      <h4>21. Governing Law And Jurisdiction</h4>
+      <p>
+        The English courts will have exclusive jurisdiction over any claim
+        arising from, or related to, a visit to or your use of the Services.
+        These Terms and any dispute or claim arising out of or in connection
+        with them or their subject matter or formation (including
+        non-contractual disputes or claims) shall be governed by and construed
+        in accordance with the law of England and Wales.
+      </p>
+      <h4>22. Entire Agreement</h4>
+      <p>
+        These Terms are the entire and exclusive agreement between FAV and you
+        regarding the Services (excluding any services for which you have a
+        separate agreement with FAV that is explicitly in addition or in place
+        of these Terms), and these Terms supersede and replace any prior
+        agreements between FAV and you regarding the Services. Other than
+        members of the group of companies of which FAV is the parent, no other
+        person or company will be third party beneficiaries to the Terms.
+      </p>
+      <p>
+        You acknowledge that you have not, in agreeing to these Terms, relied on
+        any representation, warranty, or undertaking not expressly incorporated
+        in them.
+      </p>
+      <p>
+        If any provision of these Terms is found by a proper authority to be
+        unenforceable or invalid, such unenforceability or invalidity shall not
+        render these Terms unenforceable or invalid as a whole and in such
+        event, such provision shall be changed and interpreted so as to best
+        accomplish the objectives of such unenforceable or invalid provision
+        within the limits of applicable law or applicable court decisions.
+      </p>
+      <p>
+        If a dispute arises between you and us, we strongly encourage you to
+        first contact us directly to seek a resolution at the address given
+        below or via e-mail at
+       legal@FAV.com. We will consider
+        reasonable requests to resolve the dispute through alternative dispute
+        resolution procedures, such as mediation or arbitration, as alternatives
+        to litigation.
+      </p>
+      <p>
+        Any failure by us to exercise any right or remedy under these Terms does
+        not constitute a waiver of that right or remedy.
+      </p>
+      <p>
+        The Services licensed personally to you and you may not assign, license,
+        sub-license or transfer any right or obligation of these Terms to any
+        third party.
+      </p>
+      <p>
+        We may transfer any of our rights or obligations under these Terms to
+        any third party but if we do so we will ensure that any company to whom
+        we transfer our rights or obligations will continue to honor your rights
+        under them.
+      </p>
+      <p>
+        Nothing in these Terms shall be deemed to constitute a partnership
+        between the parties nor constitute either party the agent or employee of
+        the other for any purpose.
+      </p>
+      <p>
+        FAV may revise these Terms from time to time, the most current version
+        will always be available .
+        If the revision, in FAV's sole discretion, is material FAV will notify
+        you via an e-mail to the email associated with your account. By
+        continuing to access or the Services after those revisions become
+        effective, you agree to be bound by the revised Terms.
+      </p>
+      <p>
+        These Services are operated and provided by FAV Ltd., The Minster
+        Building 7th Floor, 21 Mincing Lane, London EC3R 7AG. If you have any
+        questions about these Terms, please contact us.
+      </p>
+      <p>
+        This Agreement has been drawn up in the English language. In case of
+        discrepancies between the English text version of this Agreement and any
+        translation, the English version shall prevail.
+      </p>
+      <p>Effective Date: 22 July 2021</p>
+    </div>
+  </body>
+</html>

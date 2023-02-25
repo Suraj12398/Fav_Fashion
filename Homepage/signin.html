@@ -13,6 +13,10 @@
       box-sizing: border-box;
       font-family: Lucida;
     }
+    a{
+      text-decoration: none;
+      color: black
+    }
     #Nav {
       margin: auto;
       display: flex;
@@ -70,8 +74,8 @@
     #parent {
       display: flex;
       height: 800px;
-      width: 80%;
-      margin: auto;
+      width: 60%;
+      margin: 30%;
       margin-top: 0;
       padding-top: 70px;
     }
@@ -81,7 +85,7 @@
       justify-content: center;
       width: 300px;
     }
-    .child > button {
+    .child  button {
       width: 250px;
       display: flex;
       background-color: white;
@@ -93,13 +97,13 @@
       padding: 5px;
       height: 30px;
     }
-    .child > button div {
+    .child  button div {
       margin-right: 20px;
     }
-    .child > button img {
+    .child  button img {
       width: 20px;
     }
-    #parent > .child > .Continue {
+    #parent > .child  .Continue {
       width: 300px;
       background-color: black;
       color: white;
@@ -108,7 +112,7 @@
       text-align: center;
       border-radius: 5px;
     }
-    .child > input {
+    .child  input {
       width: 100%;
       border: 0px;
       border-bottom: 1px solid black;
@@ -120,7 +124,7 @@
     }
     .slide {
       display: flex;
-      width: 1500px;
+      width: 50%;
       flex-direction: column;
       overflow: auto;
       overflow-x: hidden;
@@ -131,15 +135,15 @@
     .slide::-webkit-scrollbar {
       display: none;
     }
-    #parent > .child > h4 {
+    #parent > .child h4 {
       font-size: xx-large;
       font-family: Arial, Helvetica, sans-serif;
       margin-bottom: 20px;
     }
     .child > p {
-      font-size: xx-small;
+      font-size: x-small;
       color: rgb(120, 119, 119);
-      margin-left: 5px;
+      margin-left: 10px;
     }
     .child a {
       text-decoration: underline;
@@ -181,6 +185,9 @@
       margin-bottom: 8px;
       margin-right: 10px;
     }
+    .child>div>p{
+      margin: 15px 0px 15px 0px;
+    }
   </style>
   <body>
     <div id="Nav">
@@ -197,8 +204,8 @@
         <div><a href="signin.html">Sign up or log in</a></div>
       </div>
       <div class="bottomNav">
-        <div> <a href="./Homepage.html"><img src="./FAV.png" alt="Logo" /></a> </div>
-        <div><h5>Women</h5></div>
+        <div> <a href="./index.html"><img src="./FAV.png" alt="Logo" /></a> </div>
+        <div><h5><a href="./womens.html">Women</a></h5></div>
         <div><h5>Men</h5></div>
         <div>
           <input
@@ -212,15 +219,24 @@
     </div>
     <div id="parent">
       <div class="child">
+      <div>
         <h4>The only Fashion site you need</h4>
-        <label>Email</label>
-        <input
-          type="email"
-          name="Email"
-          id="email"
-          placeholder="Enter your Email Adress to Login or Register"
-        />
-        <button class="Continue">Continue</button>
+        <form role="form" onsubmit="signIn(event);" autocomplete="off">
+          <div class="form-group">
+              <input type="email" name="email" id="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+              <input type="password" name="pwd" id="pwd" placeholder="Password" required>
+          </div>
+          <div class="form-group">
+              <button type="submit" class="Continue">Continue</button>
+          </div>
+        </form>
+
+      <p>Don't have an account? <a href="./createAccount.html">Sign Up</a> here</p>
+    
+      </form>
+    </div>
         <hr />
         <button>
           <div>
@@ -251,10 +267,11 @@
         </button>
         <p>
           By creating an account, you consent to lyst's
-          <a>Tearms & Conditions.</a> To learn more how FAV uses and protects
+          <a href="./terms.html">Tearms & Conditions.</a> To learn more how FAV uses and protects
           your personal data, please read FAV's <a>Privacy Policy.</a>
         </p>
       </div>
+      
       <div class="slide">
         <img
           src="https://static.lystit.com/static/n/img/sign-up/value-proposition-full.f0074b4c3a236f4af081f4cefb6475bd.png"
@@ -280,12 +297,31 @@
         </div>
         <div>
           <h4>HELP AND INFO</h4>
-          <p>Help Centre</p>
-          <p>About Us</p>
-          <p>Contact</p>
-          <p>Terms & Conditions</p>
+          <p><a href="./help.html">Help Center</a></p>
+          <p><a href="./aboutUs.html">About Us</a></p>
+          <p><a href="./help.html">Contact Us</a></p>
+          <p><a href="./terms.html">Terms & Conditions</a></p>
         </div>
       </div>
     </div>
   </body>
 </html>
+<script>
+function signIn(e) {
+    let email = document.getElementById('email').value, pwd = document.getElementById('pwd').value;
+    let formData = JSON.parse(localStorage.getItem('formData')) || [];
+    let exist = formData.length && 
+    JSON.parse(localStorage.getItem('formData')).some(data => data.email.toLowerCase() == email && data.pwd.toLowerCase() == pwd);
+    if(!exist){
+        alert("Incorrect login credentials [if you are new Please sign up]");
+    }
+    else{
+
+        alert("Enjoy FAV Fashion");
+        location.href="./Homepage.html";
+    }
+    e.preventDefault();
+}
+
+
+</script>
