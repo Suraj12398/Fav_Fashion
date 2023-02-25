@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAV-Sign up</title>
+    <title>Document</title>
   </head>
   <style>
     * {
@@ -13,9 +13,9 @@
       box-sizing: border-box;
       font-family: Lucida;
     }
-    a{
+    a {
       text-decoration: none;
-      color: black
+      color: black;
     }
     #Nav {
       margin: auto;
@@ -60,7 +60,7 @@
       width: 150px;
       margin-left: 10px;
     }
-    .bottomNav > div >a> img {
+    .bottomNav > div > a > img {
       width: 80%;
     }
     .bottomNav > div:nth-child(4) {
@@ -71,62 +71,52 @@
       border: 1px solid black;
       padding: 10px;
     }
-    #parent {
+
+    h1 {
+      display: inline;
+      /* width: 500px; */
+      padding: 2px;
+      text-align: center;
+      font-size: xxx-large;
+      /* background-color: rgb(0, 218, 246);  */
+      margin-bottom: 30px;
+      color: rgb(5, 147, 135);
+    }
+    p {
+      color: grey;
+      font-size: large;
+      margin-bottom: 30px;
+      margin-top: 5px;
+    }
+
+    #help {
+      width: 60%;
+      margin: auto;
+    }
+    .blank {
+      height: 90px;
+    }
+    hr {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .poster {
       display: flex;
-      height: 800px;
+      background-color: #f1f1f0;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      margin-bottom: 100px;
+    }
+    .poster > img {
       width: 80%;
       margin: auto;
-      margin-top: 0;
-      padding-top: 70px;
     }
-    #parent > .child {
+    #help .tag {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      width: 300px;
     }
-
-    #parent > .child  #signup {
-      width: 300px;
-      background-color: black;
-      color: white;
-      padding: 10px;
-      justify-content: center;
-      text-align: center;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-    .child  input {
-      width: 100%;
-      border: 0px;
-      border-bottom: 1px solid black;
-      background-color: rgb(241, 240, 240);
-      margin-top: 10px;
-      margin-bottom: 10px;
-      height: 30px;
-      padding: 5px;
-    }
-    .slide {
-      display: flex;
-      width: 1500px;
-      flex-direction: column;
-      overflow: auto;
-      overflow-x: hidden;
-      scroll-snap-type: y mandatory;
-      scroll-behavior: auto;
-      margin: 10px;
-    }
-    .slide::-webkit-scrollbar {
-      display: none;
-    }
-    #parent > .child > h4 {
-      font-size: xx-large;
-      font-family: Arial, Helvetica, sans-serif;
-      margin-bottom: 20px;
-    }
-
-    button {
-      cursor: pointer;
+    #help > div > div {
+      width: 200px;
     }
     #foot {
       display: flex;
@@ -161,13 +151,10 @@
       margin-bottom: 8px;
       margin-right: 10px;
     }
-    
-    .child a {
-      text-decoration: none;
-      cursor: pointer;
-      color: black;
-      font-size: small;
-      margin-bottom: 20px;
+    #m{
+      width: 60%;
+      margin: auto;
+      text-align: justify;
     }
   </style>
   <body>
@@ -185,8 +172,12 @@
         <div><a href="signin.html">Sign up or log in</a></div>
       </div>
       <div class="bottomNav">
-        <div><a href="./index.html"><img src="./FAV.png" alt="Logo" /></a></div>
-        <div><h5><a href="./womens.html">Women</a></h5></div>
+        <div>
+          <a href="./index.html"><img src="./FAV.png" alt="Logo" /></a>
+        </div>
+        <div>
+          <h5><a href="./womens.html">Women</a></h5>
+        </div>
         <div><h5>Men</h5></div>
         <div>
           <input
@@ -198,36 +189,62 @@
         </div>
       </div>
     </div>
-    <div id="parent">
-      <div class="child">
-        <a href="./signin.html"> ⇽Back </a>
-        <h4>Create an account</h4>
-        <form role="form" onsubmit="signUp(event);" autocomplete="off">
-          <div class="form-group">
-              <input type="text" name="fname" id="fname" placeholder="First Name" required>
-          </div>
-          <div class="form-group">
-              <input type="text" name="lname" id="lname" placeholder="Last Name" required>
-          </div>
-          <div class="form-group">
-              <input type="email" name="email" id="email" placeholder="Email Address" required>
-          </div>
-          <div class="form-group">
-              <input type="password" name="pwd" id="pwd" placeholder="Password" required>
-          </div>
-          <div class="form-group">
-              <button type="submit" id="signup">Sign Up</button>
-          </div>
-      </form>
-      <p>Already a member? <a href="./signin.html">Sign In</a></p>
-      </div>
-      <div class="slide">
-        <img
-          src="https://static.lystit.com/static/n/img/sign-up/value-proposition-full.f0074b4c3a236f4af081f4cefb6475bd.png"
-          alt="error"
-        />
+    <div class="blank"></div>
+    <div id="help">
+      <h1>About Us</h1>
+      <p>FAV is a fashion technology company, and premium shopping app.</p>
+      <p>
+        For over 160 million annual shoppers, we offer the most comprehensive
+        range of products from 17,000 of the world’s leading brands and stores
+      </p>
+      <p>
+        For brands and stores, our goal is to power success online. We drive
+        meaningful direct sales within a highly trusted brand environment.
+      </p>
+      <div class="tag">
+        <div>
+          <h2>8,000,000+</h2>
+          <p>
+            Products can be discovered and bought through the FAV website and
+            app
+          </p>
+        </div>
+        <div>
+          <h2>#1</h2>
+          <p>Fav app is most popular and most downloaded</p>
+        </div>
+        <div>
+          <h2>$2BN</h2>
+          <p>Lifetime GMV now exceeds $2bn USD.</p>
+        </div>
       </div>
     </div>
+    <div class="poster">
+      <img
+        src="https://cdna.lystit.com/cms/EN_Default_460f2da2ac.png"
+        alt="error"
+      />
+    </div>
+    <div id="m">
+      <p>
+        FAV operates an inventory free platform, and uses a proprietary data
+        engine to provide each customer with a highly personalised shopping
+        experience. Orders are fulfilled by the thousands of brands and stores
+        which partner with FAV. Brands available on FAV include Balenciaga,
+        Balmain, Bottega Veneta, Burberry, Fendi, Gucci, Moncler, Off-White,
+        Prada, Saint Laurent and Valentino. We’re a mix of fashion lovers,
+        technologists and data experts. Two thirds of FAV talent are engineers,
+        scientists and product people. We’re focused on ways technology can
+        delight both our customers and our brand & store partners. FAV is also
+        a unique source of fashion data insights, and is responsible for The
+        FAV Index, the industry leading report of the hottest brands and
+        products worldwide. FAV was founded in London in 2010, and is backed by
+        investors including certain funds managed by Fidelity International, C4
+        Ventures, Draper Esprit, Steadfast Financial, Balderton Capital and
+        LVMH.
+      </p>
+    </div>
+
     <div id="foot">
       <div class="rating">
         <div class="rat">
@@ -255,32 +272,4 @@
     </div>
   </body>
 </html>
-
-<script>
-  const signUp = e => {
-    let fname = document.getElementById('fname').value,
-        lname = document.getElementById('lname').value,
-        email = document.getElementById('email').value,
-        pwd = document.getElementById('pwd').value;
-
-    let formData = JSON.parse(localStorage.getItem('formData')) || [];
-
-    let exist = formData.length && 
-        JSON.parse(localStorage.getItem('formData')).some(data => 
-            data.fname.toLowerCase() == fname.toLowerCase() && 
-            data.lname.toLowerCase() == lname.toLowerCase()
-        );
-
-    if(!exist){
-        formData.push({ fname, lname, email, pwd });
-        localStorage.setItem('formData', JSON.stringify(formData));
-        document.querySelector('form').reset();
-        document.getElementById('fname').focus();
-        alert("Account Created.\n\nPlease Sign In using the link below.");
-    }
-    else{
-        alert("Ooopppssss... Duplicate found!!!\nYou have already signed up");
-    }
-    e.preventDefault();
-}
-</script>
+<script></script>
