@@ -1,6 +1,6 @@
 #FAV FASHION
 Clothing Website
-netlify link:- https://spiffy-semifreddo-07776c.netlify.app/index.html
+netlify link:- https://tranquil-moonbeam-5669a3.netlify.app
 
 It is Fashion website that shows you a data of fashion, This websites takes help of API for generating fashion data.
 
