@@ -236,17 +236,19 @@
       border-top: 1px solid black;
       border-bottom: 1px solid black;
     }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 800px) {
       #middle {
         flex-direction: column;
         margin-bottom: 150px;
+       
       }
       #middle > .join {
         padding-bottom: 40px;
         border-bottom: 1px solid black;
+        
       }
       #middle > .join > h3 {
-        width: 400px;
+        width: 100%;
         font-size: 30px;
       }
       #bottom {
@@ -259,6 +261,51 @@
         width: 700px;
         padding-left: 10px;
       }
+      #foot{
+        display: flex;
+        flex-direction: column;
+      }
+      #foot>.ihi{
+        margin: 50px;
+        width: 100%;
+        padding-bottom: 100px;
+      }
+      #foot>.rating>.rat>img{
+        width: 100%;
+        height: 100%;
+        padding-top: 200px;
+      }
+      #foot>.rating>.rat{
+        width: 100%;
+        padding-top: 200px;
+      }
+      .bth{
+        width: 80%;
+      }
+      .bth>.b{
+        flex-direction: column;
+        overflow-y: visible;
+        margin-bottom: 100px;
+        height: 1000px;
+        border-bottom: 1px solid black;
+      }
+      .bth>.t{
+        flex-direction: column;
+        overflow-y: visible;
+        margin-bottom: 100px;
+        height: 1000px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+      }
+      .bth>.h{
+        flex-direction: column;
+        overflow-y: visible;
+        margin-bottom: 100px;
+        height: 1000px;
+        border-bottom: 1px solid black;
+      }
+      
+      
     }
     #middle > .step {
       display: flex;
@@ -433,7 +480,7 @@
       <div class="bottomNav">
         <div> <a href="./index.html"><img src="./FAV.png" alt="Logo" /></a> </div>
         <div><h5><a href="./womens.html">Women</a></h5></div>
-        <div><h5>Men</h5></div>
+        <div><h5><a href="./mens.html">Men</a></h5></div>
         <div>
           <input
             type="search"
