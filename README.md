@@ -16,7 +16,7 @@ It is Fashion website that shows you a data of fashion, This websites takes help
 <br>
 <h2>Screenshots</h2>
 <h3>Home Page</h3>
-<img align="center" src="https://drive.google.com/uc?export=view&id=1J7XYh86ccRqk6jFa6VumaxpUpNuORnxH/view" alt="" />
+<img align="center" src="https://drive.google.com/uc?export=view&id=1YyWyCf8su8f2n9kkiR72728aBKTFoMrx" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 <img align="center" src="https://drive.google.com/file/d/1YyWyCf8su8f2n9kkiR72728aBKTFoMrx/view?usp=share_link" alt="" />
 <img align="center" src="https://drive.google.com/file/d/14Y1TpOPTlyLKXMsIiqPWRfJfOCDcSHpr/view?usp=share_link" alt="" />
 <br>
