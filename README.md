@@ -1,6 +1,6 @@
 #FAV FASHION
 Clothing Website
-netlify link:- https://thunderous-sundae-b54786.netlify.app/
+netlify link:- https://dapper-fairy-96bc94.netlify.app/
 
 It is Fashion website that shows you a data of fashion, This websites takes help of API for generating fashion data.
 
