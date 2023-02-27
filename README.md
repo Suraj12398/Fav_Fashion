@@ -26,7 +26,7 @@ It is Fashion website that shows you a data of fashion, This websites takes help
 <br>
 <br>
  <h3>Men's Fashion</h3>
- <img align="center" src="https://drive.google.com/uc?export=view&id=1sRxff-KwjARnjaQGH-1JuFw9v7qmAdgU" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+ <img align="center" src="https://drive.google.com/uc?export=view&id=1W5_FD_N7zJsFECEHga6uQawvd7GDFltp" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 <br>
 <br>
