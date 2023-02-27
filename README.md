@@ -22,27 +22,32 @@ It is Fashion website that shows you a data of fashion, This websites takes help
 <br>
 <br>
 <h3>Women's Fashion</h3>
-<img align  = "https://drive.google.com/file/d/1sRxff-KwjARnjaQGH-1JuFw9v7qmAdgU/view?usp=share_link" alt=""/>
+ <img align="center" src="https://drive.google.com/uc?export=view&id=1sRxff-KwjARnjaQGH-1JuFw9v7qmAdgU" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 <br>
 <br>
  <h3>Men's Fashion</h3>
-<img align  = "https://drive.google.com/file/d/1sRxff-KwjARnjaQGH-1JuFw9v7qmAdgU/view?usp=share_link" alt=""/>
+ <img align="center" src="https://drive.google.com/uc?export=view&id=1sRxff-KwjARnjaQGH-1JuFw9v7qmAdgU" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
 <br>
 <br>
 <h3>Sign in & Sign up</h3>
-<img align = "https://drive.google.com/file/d/1FyXeXcnbf2MeHFrLBnpPLAwfBw7LCRRA/view?usp=share_link" alt=""/>
+ <img align="center" src="https://drive.google.com/uc?export=view&id=1FyXeXcnbf2MeHFrLBnpPLAwfBw7LCRRA" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
 <br>
 <br>
 <h3>About Us</h3>
-<img align = "center" src="https://drive.google.com/file/d/1hxh8zVdOZsHNFyTVvBe0nPwEUbd7qtAA/view?usp=share_link" alt=""/>
+ <img align="center" src="https://drive.google.com/uc?export=view&id=1hxh8zVdOZsHNFyTVvBe0nPwEUbd7qtAA" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
 <br>
 <br>
 <h3>Contact Us</h3>
-<img align = "center" src="https://drive.google.com/file/d/1DIgIFk_tcfLlMA_6H0hF10tUTEClPtgS/view?usp=share_link" alt=""/>
+ <img align="center" src="https://drive.google.com/uc?export=view&id=1DIgIFk_tcfLlMA_6H0hF10tUTEClPtgS" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
 <br>
 <br>
 <h3>Tearms & Condition</h3>
-<img align = "center" src="https://drive.google.com/file/d/1EZgCWskqV9Fg2hG-ShslfC3WMJwNPFZ-/view?usp=share_link" alt=""/>
+ <img align="center" src="https://drive.google.com/uc?export=view&id=1EZgCWskqV9Fg2hG-ShslfC3WMJwNPFZ-" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
 <br>
 <br>
 
