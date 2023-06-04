@@ -6,112 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAV - Terms & Agreement</title>
   </head>
-  <style>
-
-* {
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
-      font-family: Lucida;
-    }
-    a{
-      text-decoration: none;
-      color: black
-    }
-    #Nav {
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 80px;
-      position: fixed;
-      background-color: white;
-      border-bottom: 1px solid black;
-    }
-    #Nav > .upNav {
-      width: 95%;
-      display: flex;
-      justify-content: right;
-    }
-    .upNav > div {
-      margin-left: 20px;
-    }
-    .upNav > div:nth-child(3) {
-      color: white;
-      background-color: black;
-      padding: 5px;
-      border-radius: 5px;
-    }
-    .upNav > div:nth-child(2) > select {
-      border: 0px;
-    }
-    .upNav > div:nth-child(3) > a {
-      text-decoration: none;
-      color: white;
-      cursor: pointer;
-    }
-    #Nav > .bottomNav {
-      width: 90%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: auto;
-    }
-    .bottomNav > div {
-      width: 150px;
-      margin-left: 10px;
-    }
-    .bottomNav > div >a> img {
-      width: 80%;
-    }
-    .bottomNav > div:nth-child(4) {
-      width: 100%;
-    }
-    .bottomNav > div:nth-child(4) > input {
-      width: 100%;
-      border: 1px solid black;
-      padding: 10px;
-    }
-    .blank{
-        height: 80px;
-    }
-    #term{
-        width: 80%;
-        margin: auto;
-        text-align: justify;
-    }
-    hr{
-        margin-bottom: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="/Homepage/stylesheets/terms.css">
   <body>
     <div id="Nav">
-        <div class="upNav">
-          <div><a href="">/IN- US$</a></div>
-          <div>
-            <select name="Help" id="help">
-              <option value="help">Help</option>
-              <option value="contact">Contact Us</option>
-              <option value="about us">About Us</option>
-              <option value="career">Careers</option>
-            </select>
-          </div>
-          <div><a href="signin.html">Sign up or log in</a></div>
+      <div class="upNav">
+        <div><a href="">/IN- US$</a></div>
+        <div>
+          <select name="Help" id="help">
+            <option value="help">Help</option>
+            <option value="contact">Contact Us</option>
+            <option value="about us">About Us</option>
+            <option value="career">Careers</option>
+          </select>
         </div>
-        <div class="bottomNav">
-          <div> <a href="./index.html"><img src="./FAV.png" alt="Logo" /></a> </div>
-          <div><h5><a href="./womens.html">Women</a></h5></div>
-          <div><h5>Men</h5></div>
-          <div>
-            <input
-              type="search"
-              name="searchProduct"
-              id="SearchP"
-              placeholder="Search (e.g. Valentino Dresses)"
-            />
-          </div>
+        <div><a href="/Homepage/scripts/signin.js">Sign up or log in</a></div>
+      </div>
+      <div class="bottomNav">
+        <div> <a href="/index.html"><img src="/Homepage/FAV.png" alt="Logo" /></a> </div>
+        <div><h5><a href="/Homepage/HTML/womens.html">Women</a></h5></div>
+        <div><h5><a href="/Homepage/HTML/mens.html">Men</a></h5></div>
+        <div>
+          <input
+            type="search"
+            name="searchProduct"
+            id="SearchP"
+            placeholder="Search (e.g. Valentino Dresses)"
+          />
         </div>
       </div>
+    </div>
       
     
     
@@ -471,7 +394,7 @@
         which can be viewed in their terms and conditions
     
       </p>
-      <p>f) General information about online payments</p>
+      <p>f General information about online payments</p>
       <p>
         However you pay for an item, you will need to follow instructions on the
         relevant checkout page. All credit/debit card holders are subject to

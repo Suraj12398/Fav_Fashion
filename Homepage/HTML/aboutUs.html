@@ -6,157 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAV-About Us</title>
   </head>
-  <style>
-    * {
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
-      font-family: Lucida;
-    }
-    a {
-      text-decoration: none;
-      color: black;
-    }
-    #Nav {
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 80px;
-      position: fixed;
-      background-color: white;
-      border-bottom: 1px solid black;
-    }
-    #Nav > .upNav {
-      width: 95%;
-      display: flex;
-      justify-content: right;
-    }
-    .upNav > div {
-      margin-left: 20px;
-    }
-    .upNav > div:nth-child(3) {
-      color: white;
-      background-color: black;
-      padding: 5px;
-      border-radius: 5px;
-    }
-    .upNav > div:nth-child(2) > select {
-      border: 0px;
-    }
-    .upNav > div:nth-child(3) > a {
-      text-decoration: none;
-      color: white;
-      cursor: pointer;
-    }
-    #Nav > .bottomNav {
-      width: 90%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: auto;
-    }
-    .bottomNav > div {
-      width: 150px;
-      margin-left: 10px;
-    }
-    .bottomNav > div > a > img {
-      width: 80%;
-    }
-    .bottomNav > div:nth-child(4) {
-      width: 100%;
-    }
-    .bottomNav > div:nth-child(4) > input {
-      width: 100%;
-      border: 1px solid black;
-      padding: 10px;
-    }
-
-    h1 {
-      display: inline;
-      /* width: 500px; */
-      padding: 2px;
-      text-align: center;
-      font-size: xxx-large;
-      /* background-color: rgb(0, 218, 246);  */
-      margin-bottom: 30px;
-      color: rgb(5, 147, 135);
-    }
-    p {
-      color: grey;
-      font-size: large;
-      margin-bottom: 30px;
-      margin-top: 5px;
-    }
-
-    #help {
-      width: 60%;
-      margin: auto;
-    }
-    .blank {
-      height: 90px;
-    }
-    hr {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-    .poster {
-      display: flex;
-      background-color: #f1f1f0;
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
-      margin-bottom: 100px;
-    }
-    .poster > img {
-      width: 80%;
-      margin: auto;
-    }
-    #help .tag {
-      display: flex;
-      justify-content: center;
-    }
-    #help > div > div {
-      width: 200px;
-    }
-    #foot {
-      display: flex;
-      width: 100%;
-      height: 500px;
-      margin-top: 50px;
-      background-color: rgb(243, 242, 242);
-      border-top: 1px solid black;
-      padding: 50px;
-      justify-content: space-around;
-    }
-    #foot > .rating img {
-      width: 500px;
-      margin-bottom: 10px;
-    }
-
-    .rating p {
-      margin-left: 80px;
-    }
-    #foot > .ihi {
-      display: flex;
-    }
-    .ihi {
-      display: flex;
-    }
-
-    .ihi h4 {
-      margin-bottom: 20px;
-      margin-right: 10px;
-    }
-    .ihi p {
-      margin-bottom: 8px;
-      margin-right: 10px;
-    }
-    #m{
-      width: 60%;
-      margin: auto;
-      text-align: justify;
-    }
-  </style>
+ <link rel="stylesheet" href="/Homepage/stylesheets/aboutUs.css">
   <body>
     <div id="Nav">
       <div class="upNav">
@@ -169,16 +19,12 @@
             <option value="career">Careers</option>
           </select>
         </div>
-        <div><a href="signin.html">Sign up or log in</a></div>
+        <div><a href="/Homepage/scripts/signin.js">Sign up or log in</a></div>
       </div>
       <div class="bottomNav">
-        <div>
-          <a href="./index.html"><img src="./FAV.png" alt="Logo" /></a>
-        </div>
-        <div>
-          <h5><a href="./womens.html">Women</a></h5>
-        </div>
-        <div><h5>Men</h5></div>
+        <div> <a href="/index.html"><img src="/Homepage/FAV.png" alt="Logo" /></a> </div>
+        <div><h5><a href="/Homepage/HTML/womens.html">Women</a></h5></div>
+        <div><h5><a href="/Homepage/HTML/mens.html">Men</a></h5></div>
         <div>
           <input
             type="search"
@@ -248,7 +94,7 @@
     <div id="foot">
       <div class="rating">
         <div class="rat">
-          <img src="./Screenshot (83).png" alt="" />
+          <img src="/Homepage/Screenshot (83).png" alt="" />
           <p>© 2023 FAV</p>
         </div>
       </div>
@@ -263,13 +109,13 @@
         </div>
         <div>
           <h4>HELP AND INFO</h4>
-          <p><a href="./help.html">Help Center</a></p>
-          <p><a href="./aboutUs.html">About Us</a></p>
-          <p><a href="./help.html">Contact Us</a></p>
-          <p><a href="./terms.html">Terms & Conditions</a></p>
+          <p><a href="/Homepage/HTML/help.html">Help Center</a></p>
+          <p><a href="/Homepage/HTML/aboutUs.html">About Us</a></p>
+          <p><a href="/Homepage/HTML/help.html">Contact Us</a></p>
+          <p><a href="/Homepage/HTML/terms.html">Terms & Conditions</a></p>
         </div>
       </div>
     </div>
   </body>
 </html>
-<script></script>
+
