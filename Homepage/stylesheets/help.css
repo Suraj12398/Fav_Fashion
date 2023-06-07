@@ -19,16 +19,23 @@
       margin: auto;
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 100vw;
       height: 80px;
       position: fixed;
       background-color: white;
       border-bottom: 1px solid black;
+      z-index: 1;
+      padding-top: 5px;
+    }
+    #Nav svg{
+      width: 30px;
     }
     #Nav > .upNav {
       width: 95%;
       display: flex;
       justify-content: right;
+      height: 30px;
+      align-items: center;
     }
     .upNav > div {
       margin-left: 20px;
@@ -38,6 +45,7 @@
       background-color: black;
       padding: 5px;
       border-radius: 5px;
+      height: 30px;
     }
     .upNav > div:nth-child(2) > select {
       border: 0px;
@@ -64,7 +72,7 @@
     .bottomNav > div:nth-child(4) {
       width: 100%;
     }
-    .bottomNav > div:nth-child(4) > input {
+    #SearchP{
       width: 100%;
       border: 1px solid black;
       padding: 10px;

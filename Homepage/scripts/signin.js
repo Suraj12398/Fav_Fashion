@@ -9,7 +9,15 @@ function signIn(e) {
     else{
 
         alert("Enjoy FAV Fashion");
-        location.href="./Homepage.html";
+        window.location.href="/index.html";
     }
     e.preventDefault();
+}
+const form = document.getElementById('searchF');
+form.addEventListener('submit', handleSubmit);
+function handleSubmit(event) {
+  event.preventDefault();
+const searchValue = document.getElementById('SearchP').value;
+localStorage.setItem('searchProduct', searchValue);
+window.location.href="./searchPage.html";
 }

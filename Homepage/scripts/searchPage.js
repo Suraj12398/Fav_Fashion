@@ -1,4 +1,8 @@
-let url = "https://dfabrica-data-app.onrender.com/products?sex=M";
+let searchP=localStorage.getItem("searchProduct")||"";
+
+console.log(searchP)
+
+let url = "https://dfabrica-data-app.onrender.com/products";
 let myData;
 // console.log("men")
 
@@ -8,6 +12,14 @@ async function getData(url) {
   myData = await data.json();
   // console.log(myData);
   return myData;
+}
+const form = document.getElementById('searchF');
+form.addEventListener('submit', handleSubmit);
+function handleSubmit(event) {
+  event.preventDefault();
+const searchValue = document.getElementById('SearchP').value;
+localStorage.setItem('searchProduct', searchValue);
+window.location.href="./searchPage.html";
 }
 
 getData(url)
@@ -21,12 +33,12 @@ getData(url)
 
 
 let container = document.getElementById("container");
-let filter = document.getElementById("filter");
 let cart=JSON.parse(localStorage.getItem("cart"))||[];
 let wish=JSON.parse(localStorage.getItem("wish"))||[];
 
 function display(data) {
   container.innerHTML = "";
+   data = data.filter(item => item.name.toLowerCase().includes(searchP));
 
   data.forEach((ele) => {
   
@@ -82,33 +94,8 @@ function display(data) {
       });
   });
 }
-const form = document.getElementById('searchF');
-form.addEventListener('submit', handleSubmit);
-function handleSubmit(event) {
-  event.preventDefault();
-const searchValue = document.getElementById('SearchP').value;
-localStorage.setItem('searchProduct', searchValue);
-window.location.href="./searchPage.html";
-}
 
 
-filter.addEventListener("change",(el)=>{
-  getData(url)
-  .then((data) => {
-    // console.log(data)
-    let newData=data.filter((e)=>{
-      if(el.target.value==""){
-        console.log("click")
-        return e.category;
-      }
-    return el.target.value===e.category;
-    })
-    display(newData)
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-})
 
 
 

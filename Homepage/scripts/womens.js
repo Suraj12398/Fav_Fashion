@@ -37,7 +37,7 @@ function display(data) {
     let des = document.createElement("p");
     des.innerText = ele.description.split(",")[0].trim().replace("[","");
     let price = document.createElement("h5");
-    price.innerText = "Rs. " + ele["price-inr"];
+    price.innerText = "Rs. " + ele["discountPriceInr"];
     let name = document.createElement("h4");
     name.innerText = "From " + ele.name;
     let button = document.createElement("div");
@@ -90,6 +90,10 @@ filter.addEventListener("change",(el)=>{
     // console.log(data)
     
     let newData=data.filter((e)=>{
+      if(el.target.value==""){
+        console.log("click")
+        return e.category;
+      }
     return el.target.value===e.category;
 
     })
@@ -100,6 +104,14 @@ filter.addEventListener("change",(el)=>{
   });
 })
 
+const form = document.getElementById('searchF');
+form.addEventListener('submit', handleSubmit);
+function handleSubmit(event) {
+  event.preventDefault();
+const searchValue = document.getElementById('SearchP').value;
+localStorage.setItem('searchProduct', searchValue);
+window.location.href="./searchPage.html";
+}
 
 
 

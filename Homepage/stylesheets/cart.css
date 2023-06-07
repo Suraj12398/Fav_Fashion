@@ -21,16 +21,23 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     position: fixed;
     background-color: white;
     border-bottom: 1px solid black;
+    z-index: 1;
+    padding-top: 5px;
+  }
+  #Nav svg{
+    width: 30px;
   }
   #Nav > .upNav {
     width: 95%;
     display: flex;
     justify-content: right;
+    height: 30px;
+    align-items: center;
   }
   .upNav > div {
     margin-left: 20px;
@@ -40,6 +47,7 @@
     background-color: black;
     padding: 5px;
     border-radius: 5px;
+    height: 30px;
   }
   .upNav > div:nth-child(2) > select {
     border: 0px;
@@ -66,12 +74,12 @@
   .bottomNav > div:nth-child(4) {
     width: 100%;
   }
-  .bottomNav > div:nth-child(4) > input {
+  
+  #SearchP{
     width: 100%;
     border: 1px solid black;
     padding: 10px;
   }
-  
  /* ---------nav end------------- */
 
 #top{
@@ -129,7 +137,72 @@
   #container p {
     color: grey;
   }
+  #billing{
+    border: 2px solid rgb(193, 177, 193);
+    padding: 30px;
+    width: 30vw;
+    margin: auto;
+    border-radius: 10px;
+  }
 
+  #heading_cart{
+    color: #714da6;
+    margin-bottom: 20px;
+  }
+  .cssbuttons-io-button {
+    background: #A370F0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 1vw;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
 
 
 /* -----------foot start---------------- */
@@ -170,35 +243,36 @@
 
 
 @media screen and (max-width: 800px) {
-    #container{
-        grid-template-columns: repeat(2,1fr);
-        width: 80%;
-    }
-    #top>div{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    #foot{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+  #container{
+      grid-template-columns: repeat(2,50vw);
+      width: 80vw;
+      justify-content: center;
   }
-  #foot>.ihi{
-    margin: 50px;
-    width: 100%;
-    padding-bottom: 100px;
+  #top>div{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
   }
-  #foot>.rating>.rat>img{
-    width: 100%;
-    height: 100%;
-    padding-top: 50px;
-  }
-  
-  h4{
-    margin: auto;
-    margin-top: 10px;
-  }
+  #foot{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+#foot>.ihi{
+  margin: 50px;
+  width: 100%;
+  padding-bottom: 100px;
+}
+#foot>.rating>.rat>img{
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+}
+
+h4{
+  margin: auto;
+  margin-top: 10px;
+}
 
 
 }

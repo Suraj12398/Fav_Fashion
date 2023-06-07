@@ -2,14 +2,27 @@
 let container = document.getElementById("container");
 let filter = document.getElementById("filter");
 let data=JSON.parse(localStorage.getItem("cart"))||[];
+let headingCart=document.getElementById("heading_cart");
+let billTotal=document.getElementById("totalBill");
+const form = document.getElementById('searchF');
+form.addEventListener('submit', handleSubmit);
+function handleSubmit(event) {
+  event.preventDefault();
+const searchValue = document.getElementById('SearchP').value;
+localStorage.setItem('searchProduct', searchValue);
+window.location.href="./searchPage.html";
+}
 
-// console.log(data)
-if(data.length==0){
-    
-    let h1=document.createElement("h1")
-    h1.setAttribute("class","empty")
-    h1.innerText="Cart is Empty please shop something...."
-    container.append(h1);
+console.log(data)
+
+let total=00;
+for(let i=0;i<data.length;i++){
+  total+=data[i]["discountPriceInr"];
+}
+billTotal.innerText=total;
+
+if(data.length==0){ 
+    headingCart.innerText="! Cart is Empty please shop something...."
 }
 display(data);
 
@@ -25,7 +38,7 @@ function display(data) {
       let des = document.createElement("p");
       des.innerText = ele.description.split(",")[0].trim().replace("[","");
       let price = document.createElement("h5");
-      price.innerText = "Rs. " + ele["price-inr"];
+      price.innerText = "Rs. " + ele["discountPriceInr"];
       let name = document.createElement("h4");
       name.innerText = "From " + ele.name;
 
@@ -38,6 +51,7 @@ function display(data) {
         localStorage.setItem("cart",JSON.stringify(LS));
         display(LS);
         alert("Product Removed from cartlist");
+        window.location.reload();
     })
       del.innerText="Remove"
 
@@ -46,8 +60,6 @@ function display(data) {
       box.append(image, name,des, price, del);
       container.append(box);
     
-     
-      
   });
 }
 
