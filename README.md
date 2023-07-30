@@ -1,4 +1,4 @@
-#FAV FASHION
+# FAV FASHION
 Clothing Website
 netlify link:- https://dapper-fairy-96bc94.netlify.app/
 
@@ -8,7 +8,7 @@ It is Fashion website that shows you a data of fashion, This websites takes help
 <h2>Fashion Website<h2>
 <h3>It is Fashion website that shows you a data of fashion, This websites takes help of API for generating fashion data.
 </h3>
- #User Functions
+ # User Functions
 <h2>Login and Logout</h2>
 <h2>Add to cart and add to fav</h2>
  <h2>Search Functionality</h2>
