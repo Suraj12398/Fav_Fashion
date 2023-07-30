@@ -2,25 +2,26 @@
 Clothing Website
 netlify link:- https://dapper-fairy-96bc94.netlify.app/
 
-It is Fashion website that shows you a data of fashion, This websites takes help of API for generating fashion data.
-
-<h1>FAV FASHION</h1>
+It is Fashion website that shows you a data of fashion, This websites takes help of API for generating fashion data and provide user friendly Ui. It has functions like Login and Logout using Local Storage, Add to cart, add to fav, Search Functionality, Filter functionality. 
 <h2>Fashion Website<h2>
 <h3>It is Fashion website that shows you a data of fashion, This websites takes help of API for generating fashion data.
 </h3>
- # User Functions
-<h2>Login and Logout</h2>
-<h2>Add to cart and add to fav</h2>
- <h2>Search Functionality</h2>
-<h2>Filter Functionality</h2>
-<h2>Responsive with Phone and Tablet</h2>
+ 
+ # Functionality
+<h3>Login and Logout</h2>
+<h3>Add to cart and add to fav</h3>
+<h3>Search Functionality</h3>
+<h3>Filter Functionality</h3>
+<h3>Responsive with Phone and Tablet</h3>
  
 <br>
+
 <h2>Language and Tools</h2>
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
 <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="35" height="35"/> </a>
 <br>
+
 <h2>Screenshots</h2>
 <h3>Home Page</h3>
  <img align="center" src="https://drive.google.com/uc?export=view&id=1J7XYh86ccRqk6jFa6VumaxpUpNuORnxH" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
