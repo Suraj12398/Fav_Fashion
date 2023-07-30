@@ -8,6 +8,13 @@ It is Fashion website that shows you a data of fashion, This websites takes help
 <h2>Fashion Website<h2>
 <h3>It is Fashion website that shows you a data of fashion, This websites takes help of API for generating fashion data.
 </h3>
+ #User Functions
+<h2>Login and Logout</h2>
+<h2>Add to cart and add to fav</h2>
+ <h2>Search Functionality</h2>
+<h2>Filter Functionality</h2>
+<h2>Responsive with Phone and Tablet</h2>
+ 
 <br>
 <h2>Language and Tools</h2>
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
